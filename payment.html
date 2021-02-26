@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="img/main/flaticon.svg">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <aside class="main-aside">
+        <button class="btn-plain aside-close">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21L21 1M1 1L21 21" stroke="white"/>
+            </svg>
+        </button>
+        <div class="main-aside-tools">
+            <div class="header-lang">
+                <button class="btn-plain lang-change-btn dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon icon-earth"></i>
+                    <span>Рус</span>
+                    <i class="icon icon-arrows"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">Каз</a>
+                    </li>
+                    <li>
+                        <a href="#">Eng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="switch-dark">
+                <input type="checkbox">
+                <span class="slider"></span>
+                <div class="switch-dark-inner">
+                    <svg class="sun" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.091 9.9996C14.091 12.2594 12.2599 14.0905 10.0001 14.0905C7.74027 14.0905 5.90918 12.2594 5.90918 9.9996C5.90918 7.73978 7.74027 5.90869 10.0001 5.90869C12.2599 5.90869 14.091 7.73978 14.091 9.9996Z" stroke="#FACC56" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.7744 6.82751C19.0815 6.95212 19.4314 6.80423 19.556 6.49718C19.6807 6.19013 19.5328 5.8402 19.2257 5.71559L18.7744 6.82751ZM15.2504 4.74973L14.6933 4.97265C14.7539 5.1241 14.8736 5.24434 15.0247 5.30569L15.2504 4.74973ZM14.3069 0.777082C14.1837 0.46943 13.8345 0.319833 13.5269 0.442948C13.2192 0.566062 13.0696 0.915267 13.1928 1.22292L14.3069 0.777082ZM13.9728 1.55709C14.2805 1.43404 14.4301 1.08486 14.3071 0.777187C14.184 0.469512 13.8349 0.319849 13.5272 0.442906L13.9728 1.55709ZM10.0003 2.49973L9.77746 3.05682C9.92049 3.11403 10.08 3.11403 10.2231 3.05682L10.0003 2.49973ZM6.47335 0.442906C6.16568 0.319849 5.8165 0.469512 5.69345 0.777187C5.57039 1.08486 5.72005 1.43404 6.02773 1.55709L6.47335 0.442906ZM6.80733 1.22292C6.93044 0.915267 6.78084 0.566062 6.47319 0.442948C6.16554 0.319833 5.81634 0.46943 5.69322 0.777082L6.80733 1.22292ZM4.74973 4.74973L4.97536 5.30569C5.12652 5.24434 5.24618 5.1241 5.30678 4.97265L4.74973 4.74973ZM0.774366 5.71559C0.467319 5.8402 0.319428 6.19013 0.444042 6.49718C0.568656 6.80423 0.918587 6.95212 1.22563 6.82751L0.774366 5.71559ZM1.55666 6.04764C1.43299 5.7402 1.08352 5.59123 0.776092 5.71489C0.46866 5.83855 0.319684 6.18802 0.443345 6.49545L1.55666 6.04764ZM2.49973 10L3.05637 10.224C3.11418 10.0803 3.11418 9.91979 3.05638 9.77609L2.49973 10ZM0.443362 13.5037C0.319677 13.8111 0.468627 14.1606 0.77605 14.2843C1.08347 14.408 1.43295 14.259 1.55664 13.9516L0.443362 13.5037ZM1.22574 13.1717C0.918715 13.047 0.568756 13.1949 0.444084 13.5019C0.319412 13.8089 0.467238 14.1589 0.774262 14.2835L1.22574 13.1717ZM4.74973 15.2503L5.30678 15.0274C5.24619 14.8759 5.12657 14.7557 4.97547 14.6944L4.74973 15.2503ZM5.69322 19.2229C5.81634 19.5306 6.16554 19.6802 6.47319 19.5571C6.78084 19.4339 6.93044 19.0847 6.80733 18.7771L5.69322 19.2229ZM6.02773 18.4429C5.72005 18.566 5.57039 18.9151 5.69345 19.2228C5.8165 19.5305 6.16568 19.6801 6.47335 19.5571L6.02773 18.4429ZM10.0003 17.5003L10.2231 16.9432C10.08 16.886 9.92049 16.886 9.77746 16.9432L10.0003 17.5003ZM13.5272 19.5571C13.8349 19.6801 14.184 19.5305 14.3071 19.2228C14.4301 18.9151 14.2805 18.566 13.9728 18.4429L13.5272 19.5571ZM13.1928 18.7771C13.0696 19.0847 13.2192 19.4339 13.5269 19.5571C13.8345 19.6802 14.1837 19.5306 14.3069 19.2229L13.1928 18.7771ZM15.2504 15.2503L15.0246 14.6944C14.8735 14.7557 14.7539 14.8759 14.6933 15.0274L15.2504 15.2503ZM19.2258 14.2835C19.5328 14.1589 19.6807 13.8089 19.556 13.5019C19.4313 13.1949 19.0814 13.047 18.7743 13.1717L19.2258 14.2835ZM18.4436 13.9516C18.5673 14.259 18.9168 14.408 19.2242 14.2843C19.5316 14.1606 19.6806 13.8111 19.5569 13.5037L18.4436 13.9516ZM17.5005 10L16.9439 9.77609C16.8861 9.91979 16.8861 10.0803 16.9439 10.224L17.5005 10ZM19.5569 6.49545C19.6806 6.18802 19.5316 5.83855 19.2242 5.71489C18.9167 5.59123 18.5673 5.7402 18.4436 6.04764L19.5569 6.49545ZM19.2257 5.71559L15.476 4.19377L15.0247 5.30569L18.7744 6.82751L19.2257 5.71559ZM15.8074 4.52681L14.3069 0.777082L13.1928 1.22292L14.6933 4.97265L15.8074 4.52681ZM13.5272 0.442906L9.77746 1.94263L10.2231 3.05682L13.9728 1.55709L13.5272 0.442906ZM10.2231 1.94263L6.47335 0.442906L6.02773 1.55709L9.77746 3.05682L10.2231 1.94263ZM5.69322 0.777082L4.19268 4.52681L5.30678 4.97265L6.80733 1.22292L5.69322 0.777082ZM4.52409 4.19377L0.774366 5.71559L1.22563 6.82751L4.97536 5.30569L4.52409 4.19377ZM0.443345 6.49545L1.94307 10.2239L3.05638 9.77609L1.55666 6.04764L0.443345 6.49545ZM1.94309 9.77605L0.443362 13.5037L1.55664 13.9516L3.05637 10.224L1.94309 9.77605ZM0.774262 14.2835L4.52399 15.8062L4.97547 14.6944L1.22574 13.1717L0.774262 14.2835ZM4.19268 15.4732L5.69322 19.2229L6.80733 18.7771L5.30678 15.0274L4.19268 15.4732ZM6.47335 19.5571L10.2231 18.0574L9.77746 16.9432L6.02773 18.4429L6.47335 19.5571ZM9.77746 18.0574L13.5272 19.5571L13.9728 18.4429L10.2231 16.9432L9.77746 18.0574ZM14.3069 19.2229L15.8074 15.4732L14.6933 15.0274L13.1928 18.7771L14.3069 19.2229ZM15.4761 15.8062L19.2258 14.2835L18.7743 13.1717L15.0246 14.6944L15.4761 15.8062ZM19.5569 13.5037L18.0572 9.77605L16.9439 10.224L18.4436 13.9516L19.5569 13.5037ZM18.0572 10.2239L19.5569 6.49545L18.4436 6.04764L16.9439 9.77609L18.0572 10.2239Z" fill="#FACC56"/>
+                    </svg>
+                    <svg class="moon" width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5455 14.3006C15.3229 14.3195 15.0996 14.3334 14.872 14.3334C10.6582 14.3334 7.24219 11.0505 7.24219 7.00028C7.24219 4.561 8.48582 2.40682 10.392 1.07373" stroke="#ACB4BE" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.392 1.07345C10.0415 1.02982 9.68582 1 9.32291 1C4.72655 1 1 4.58182 1 9C1 13.4189 4.72655 17 9.32291 17C11.8015 17 14.0204 15.9535 15.5455 14.3004" stroke="#ACB4BE" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-aside-top">
+            <a class="main-logo" href="index.html">
+                <img src="img/main/logo.svg">
+                <p>Онлайн <br>университет <br>Edu Buginsoft</p>
+            </a>
+            <ul class="nav main-nav">
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.1818 5.63672H7.54541" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.1818 21C21.1818 21.5523 20.7341 22 20.1818 22H5.72727C4.22091 22 3 20.7791 3 19.2727V4.72727C3 3.22091 4.22091 2 5.72727 2H20.1818C20.7341 2 21.1818 2.44772 21.1818 3V21Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Все курсы</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.37121 10.2021V17.0623" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.0382 6.91895V17.0617" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.6285 13.8271V17.0622" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6857 2H7.31429C4.04762 2 2 4.31208 2 7.58516V16.4148C2 19.6879 4.0381 22 7.31429 22H16.6857C19.9619 22 22 19.6879 22 16.4148V7.58516C22 4.31208 19.9619 2 16.6857 2Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Тесты</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 12.9453L11.5 14.9453L15.5 8.94531" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 21.9453H6C3.791 21.9453 2 20.1543 2 17.9453V5.94531C2 3.73631 3.791 1.94531 6 1.94531H18C20.209 1.94531 22 3.73631 22 5.94531V17.9453C22 20.1543 20.209 21.9453 18 21.9453Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Задания</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.7272 20.3089H18.5454C19.5491 20.3089 20.3636 19.4944 20.3636 18.4907V5.76349C20.3636 4.75986 19.5491 3.94531 18.5454 3.94531H4" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M4 3.94531V20.3089L14.2972 23.8389C15.4818 24.258 16.7272 23.3871 16.7272 22.1389V9.72894C16.7272 8.96621 16.2445 8.28621 15.5209 8.02985L4 3.94531" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Журнал</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9996 7.41995V5.58181C21.9996 4.57729 21.185 3.76367 20.1814 3.76367H3.81814C2.81453 3.76367 2 4.57729 2 5.58181V20.126C2 21.1306 2.81453 21.9451 3.81814 21.9451H7.47442" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.54541 1.94531V6.49067" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.4541 1.94531V6.49067" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9996 16.0359C21.9996 19.2995 19.3542 21.9449 16.0906 21.9449C12.827 21.9449 10.1816 19.2995 10.1816 16.0359C10.1816 12.7723 12.827 10.127 16.0906 10.127C19.3542 10.127 21.9996 12.7723 21.9996 16.0359Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5451 13.7637V16.4909H13.8179" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Расписание</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.24463 15.7268L10.2378 11.8367L13.652 14.5186L16.581 10.7383" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="19.9954" cy="5.14583" r="1.9222" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.9243 4.06543H7.65655C4.64511 4.06543 2.77783 6.19815 2.77783 9.20959V17.292C2.77783 20.3034 4.6085 22.427 7.65655 22.427H16.2607C19.2721 22.427 21.1394 20.3034 21.1394 17.292V10.2531" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Рейтинг</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7161 16.2236H8.49609" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.7161 12.0371H8.49609" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.2511 7.86035H8.49609" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9085 2.75C15.9085 2.75 8.23149 2.754 8.21949 2.754C5.45949 2.771 3.75049 4.587 3.75049 7.357V16.553C3.75049 19.337 5.47249 21.16 8.25649 21.16C8.25649 21.16 15.9325 21.157 15.9455 21.157C18.7055 21.14 20.4155 19.323 20.4155 16.553V7.357C20.4155 4.573 18.6925 2.75 15.9085 2.75Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.6389 14.3962H17.5906C16.1042 14.3953 14.8993 13.1914 14.8984 11.7049C14.8984 10.2185 16.1042 9.01458 17.5906 9.01367H21.6389" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.0485 11.6432H17.7369" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.74766 3H16.3911C19.2892 3 21.6388 5.34951 21.6388 8.24766V15.4247C21.6388 18.3229 19.2892 20.6724 16.3911 20.6724H7.74766C4.84951 20.6724 2.5 18.3229 2.5 15.4247V8.24766C2.5 5.34951 4.84951 3 7.74766 3Z" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.03564 7.53772H12.4346" stroke="#808191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Рефералка</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-aside-bottom">
+            <div class="faq">
+                <h6>Ваш персональный  менеджер</h6>
+                <a class="faq-link" href="tel:+77777777777">
+                    <i class="icon icon-faq"></i>
+                    <span>+7 789 432 21-21</span>
+                </a>
+            </div>
+            <ul class="nav sub-nav">
+                <li>
+                    <a href="#">О сервисе</a>
+                </li>
+                <li>
+                    <a href="#">Условия использования</a>
+                </li>
+                <li>
+                    <a href="#">Конфиденциальность</a>
+                </li>
+                <li>
+                    <a href="#">Помощь</a>
+                </li>
+            </ul>
+            <div class="mobile-app">
+                <a href="#">
+                    <i class="icon icon-google"></i>
+                    <span>Доступно в Play Market</span>
+                </a>
+                <a href="#">
+                    <i class="icon icon-apple"></i>
+                    <span>Скачать в App Store</span>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>© 2021 • Создай свою онлайн школу вместе с Educenter</p>
+            </div>
+        </div>
+    </aside>
+    <article class="main-article">
+        <header>
+            <div class="header visible-back-link">
+                <div class="header-left">
+                    <button class="btn-plain call-menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="main-logo-xs" href="index.html">
+                        <img src="img/main/logo.svg">
+                    </a>
+                    <h1 class="header-title d-none">Курсы</h1>
+                    <a class="back-link" href="#">
+                        <i class="icon arrow-left"></i>
+                        <span>Назад</span>
+                    </a>
+                </div>
+                <div class="header-authorize">
+                    <a class="login-btn" href="#">Войти</a>
+                    <a class="registration-btn active" href="#">Регистрация</a>
+                </div>
+                <a class="header-profile" href="#">
+                    <span>Мой профиль</span>
+                    <div class="header-profile-img">
+                        <img src="img/content/author.png">
+                    </div>
+                </a>
+                <div class="header-tools">
+                    <button class="btn-plain search-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.92383 11.9595C4.92383 8.66815 7.59198 6 10.8833 6C14.1747 6 16.8428 8.66815 16.8428 11.9595C16.8428 15.2508 14.1747 17.919 10.8833 17.919C7.59198 17.919 4.92383 15.2508 4.92383 11.9595ZM10.8833 4C6.48741 4 2.92383 7.56359 2.92383 11.9595C2.92383 16.3554 6.48741 19.919 10.8833 19.919C13.0813 19.919 15.0711 19.0281 16.5115 17.5877L19.9238 21L21.338 19.5858L17.7461 15.9938C18.443 14.8108 18.8428 13.4319 18.8428 11.9595C18.8428 7.56359 15.2792 4 10.8833 4Z" fill="#111621"/>
+                        </svg>
+                    </button>
+                    <div class="header-notice">
+                        <button class="btn-plain notice-btn">
+                            <i class="icon icon-notice"></i>
+                        </button>
+                        <div class="notice-list">
+                            <div class="notice-item">
+                                <div class="notice-img bg-blue">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55814 1.39535C1.91648 1.39535 1.39535 1.91648 1.39535 2.55814V17.4419C1.39535 18.0835 1.91648 18.6047 2.55814 18.6047H17.4419C18.0835 18.6047 18.6047 18.0835 18.6047 17.4419V2.55814C18.6047 1.91648 18.0835 1.39535 17.4419 1.39535H2.55814ZM0 2.55814C0 1.14585 1.14585 0 2.55814 0H17.4419C18.8542 0 20 1.14585 20 2.55814V17.4419C20 18.8542 18.8542 20 17.4419 20H2.55814C1.14585 20 0 18.8542 0 17.4419V2.55814ZM7.36712 3.86458C7.8254 3.65424 8.4135 3.65686 8.90341 3.99282L8.90412 3.9933L13.2322 6.96924L13.2329 6.96968C14.0703 7.54354 14.0703 8.73615 13.2329 9.30999L13.2322 9.31041L8.90409 12.2854L8.90404 12.2855C8.41424 12.6222 7.82584 12.6254 7.36712 12.4148C6.90679 12.2036 6.51163 11.7405 6.51163 11.1142V5.16448C6.51163 4.53816 6.90731 4.07562 7.36712 3.86458ZM4.4186 14.8837C4.03329 14.8837 3.72093 15.1961 3.72093 15.5814C3.72093 15.9667 4.03329 16.2791 4.4186 16.2791H8.13953C8.52485 16.2791 8.83721 15.9667 8.83721 15.5814C8.83721 15.1961 8.52485 14.8837 8.13953 14.8837H4.4186ZM13.0233 15.5814C13.0233 15.1961 13.3356 14.8837 13.7209 14.8837H15.5814C15.9667 14.8837 16.2791 15.1961 16.2791 15.5814C16.2791 15.9667 15.9667 16.2791 15.5814 16.2791H13.7209C13.3356 16.2791 13.0233 15.9667 13.0233 15.5814ZM11.6279 15.5723C11.6279 15.1869 11.3155 14.8746 10.9302 14.8746C10.5449 14.8746 10.2326 15.1869 10.2326 15.5723V15.5816C10.2326 15.9669 10.5449 16.2792 10.9302 16.2792C11.3155 16.2792 11.6279 15.9669 11.6279 15.5816V15.5723Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="notice-caption">
+                                    <p>Ваш курс <a href="#">“Психология”</a> купил(а) <a href="#">“Арман Жумахан”</a></p>
+                                    <div class="notice-date">
+                                        <i class="icon icon-watch"></i>
+                                        <span>15 августа в 13:01</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-img bg-yellow">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.39535 4.4186C1.39535 2.74904 2.74904 1.39535 4.4186 1.39535H15.5814C17.251 1.39535 18.6047 2.74904 18.6047 4.4186V15.5814C18.6047 17.251 17.251 18.6047 15.5814 18.6047H4.4186C2.74904 18.6047 1.39535 17.251 1.39535 15.5814V4.4186ZM4.4186 0C1.97841 0 0 1.97841 0 4.4186V15.5814C0 18.0216 1.97841 20 4.4186 20H15.5814C18.0216 20 20 18.0216 20 15.5814V4.4186C20 1.97841 18.0216 0 15.5814 0H4.4186ZM4.4186 9.30233C4.03329 9.30233 3.72093 9.61469 3.72093 10C3.72093 10.3853 4.03329 10.6977 4.4186 10.6977H15.5814C15.9667 10.6977 16.2791 10.3853 16.2791 10C16.2791 9.61469 15.9667 9.30233 15.5814 9.30233H4.4186ZM3.72093 5.34884C3.72093 4.96352 4.03329 4.65116 4.4186 4.65116H9.06977C9.45508 4.65116 9.76744 4.96352 9.76744 5.34884C9.76744 5.73415 9.45508 6.04651 9.06977 6.04651H4.4186C4.03329 6.04651 3.72093 5.73415 3.72093 5.34884ZM4.4186 13.9535C4.03329 13.9535 3.72093 14.2658 3.72093 14.6512C3.72093 15.0365 4.03329 15.3488 4.4186 15.3488H12.7907C13.176 15.3488 13.4884 15.0365 13.4884 14.6512C13.4884 14.2658 13.176 13.9535 12.7907 13.9535H4.4186Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="notice-caption">
+                                    <p>Ваш курс <a href="#">“Психология”</a> купил(а) <a href="#">“Арман Жумахан”</a></p>
+                                    <div class="notice-date">
+                                        <i class="icon icon-watch"></i>
+                                        <span>15 августа в 13:01</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-img bg-green">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 10C20 15.5229 15.5229 20 10 20C4.47714 20 0 15.5229 0 10C0 4.47714 4.47714 0 10 0C15.5229 0 20 4.47714 20 10ZM8.84331 15.2949L16.2627 7.87556C16.5146 7.62363 16.5146 7.21512 16.2627 6.96319L15.3503 6.05081C15.0983 5.79883 14.6898 5.79883 14.4379 6.05081L8.3871 12.1015L5.56214 9.27657C5.3102 9.02464 4.90169 9.02464 4.64972 9.27657L3.73734 10.189C3.4854 10.4409 3.4854 10.8494 3.73734 11.1013L7.93089 15.2949C8.18286 15.5469 8.59133 15.5469 8.84331 15.2949Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="notice-caption">
+                                    <p>Ваш курс <a href="#">“Психология”</a> купил(а) <a href="#">“Арман Жумахан”</a></p>
+                                    <div class="notice-date">
+                                        <i class="icon icon-watch"></i>
+                                        <span>15 августа в 13:01</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-img bg-pink">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.57447C0 1.15316 1.15316 0 2.57447 0H4.44681H17.5532H19.4255C20.8468 0 22 1.15316 22 2.57447V8.19149C22 10.5687 20.1343 12.5105 17.7873 12.6322C17.0529 14.5702 15.5116 16.1101 13.5745 16.8451V20.5957H14.7447C15.1325 20.5957 15.4468 20.9101 15.4468 21.2979C15.4468 21.6856 15.1325 22 14.7447 22H12.8723H9.12766H7.25532C6.86755 22 6.55319 21.6856 6.55319 21.2979C6.55319 20.9101 6.86755 20.5957 7.25532 20.5957H8.42553V16.8451C6.48839 16.1101 4.94706 14.5702 4.21269 12.6322C1.86573 12.5105 0 10.5687 0 8.19149V2.57447ZM9.82979 20.5957H12.1702V16.3418C12.1702 16.0311 12.3744 15.7574 12.6721 15.6688C15.0894 14.9497 16.8511 12.7129 16.8511 10.0638V1.40426H5.14894V10.0638C5.14894 12.7129 6.91055 14.9497 9.32786 15.6688C9.62563 15.7574 9.82979 16.0311 9.82979 16.3418V20.5957ZM3.82867 11.1712C3.77337 10.8102 3.74468 10.4404 3.74468 10.0638V1.40426H2.57447C1.92871 1.40426 1.40426 1.92871 1.40426 2.57447V8.19149C1.40426 9.65992 2.44478 10.8855 3.82867 11.1712ZM18.1713 11.1712C19.5552 10.8855 20.5957 9.65992 20.5957 8.19149V2.57447C20.5957 1.92871 20.0713 1.40426 19.4255 1.40426H18.2553V10.0638C18.2553 10.4404 18.2266 10.8102 18.1713 11.1712ZM11 3.74468C11.3878 3.74468 11.7021 4.05903 11.7021 4.44681V6.2891L13.4539 5.71991C13.8227 5.60009 14.2188 5.80191 14.3386 6.17071C14.4584 6.5395 14.2566 6.93561 13.8878 7.05544L12.1364 7.62451L13.2188 9.11457C13.4467 9.42831 13.3771 9.86739 13.0634 10.0953C12.7497 10.3232 12.3106 10.2536 12.0827 9.93988L11.0001 8.44954L9.91748 9.93988C9.68958 10.2536 9.25049 10.3232 8.93676 10.0953C8.62302 9.86739 8.55344 9.42831 8.78134 9.11457L9.86369 7.62458L8.11207 7.05544C7.74328 6.93561 7.54145 6.5395 7.66128 6.17071C7.78111 5.80191 8.17722 5.60009 8.54601 5.71991L10.2979 6.28913V4.44681C10.2979 4.05903 10.6122 3.74468 11 3.74468Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="notice-caption">
+                                    <p>Ваш курс <a href="#">“Психология”</a> купил(а) <a href="#">“Арман Жумахан”</a></p>
+                                    <div class="notice-date">
+                                        <i class="icon icon-watch"></i>
+                                        <span>15 августа в 13:01</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-img bg-blue">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55814 1.39535C1.91648 1.39535 1.39535 1.91648 1.39535 2.55814V17.4419C1.39535 18.0835 1.91648 18.6047 2.55814 18.6047H17.4419C18.0835 18.6047 18.6047 18.0835 18.6047 17.4419V2.55814C18.6047 1.91648 18.0835 1.39535 17.4419 1.39535H2.55814ZM0 2.55814C0 1.14585 1.14585 0 2.55814 0H17.4419C18.8542 0 20 1.14585 20 2.55814V17.4419C20 18.8542 18.8542 20 17.4419 20H2.55814C1.14585 20 0 18.8542 0 17.4419V2.55814ZM7.36712 3.86458C7.8254 3.65424 8.4135 3.65686 8.90341 3.99282L8.90412 3.9933L13.2322 6.96924L13.2329 6.96968C14.0703 7.54354 14.0703 8.73615 13.2329 9.30999L13.2322 9.31041L8.90409 12.2854L8.90404 12.2855C8.41424 12.6222 7.82584 12.6254 7.36712 12.4148C6.90679 12.2036 6.51163 11.7405 6.51163 11.1142V5.16448C6.51163 4.53816 6.90731 4.07562 7.36712 3.86458ZM4.4186 14.8837C4.03329 14.8837 3.72093 15.1961 3.72093 15.5814C3.72093 15.9667 4.03329 16.2791 4.4186 16.2791H8.13953C8.52485 16.2791 8.83721 15.9667 8.83721 15.5814C8.83721 15.1961 8.52485 14.8837 8.13953 14.8837H4.4186ZM13.0233 15.5814C13.0233 15.1961 13.3356 14.8837 13.7209 14.8837H15.5814C15.9667 14.8837 16.2791 15.1961 16.2791 15.5814C16.2791 15.9667 15.9667 16.2791 15.5814 16.2791H13.7209C13.3356 16.2791 13.0233 15.9667 13.0233 15.5814ZM11.6279 15.5723C11.6279 15.1869 11.3155 14.8746 10.9302 14.8746C10.5449 14.8746 10.2326 15.1869 10.2326 15.5723V15.5816C10.2326 15.9669 10.5449 16.2792 10.9302 16.2792C11.3155 16.2792 11.6279 15.9669 11.6279 15.5816V15.5723Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="notice-caption">
+                                    <p>Ваш курс <a href="#">“Психология”</a> купил(а) <a href="#">“Арман Жумахан”</a></p>
+                                    <div class="notice-date">
+                                        <i class="icon icon-watch"></i>
+                                        <span>15 августа в 13:01</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-lang">
+                        <button class="btn-plain lang-change-btn dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon icon-earth"></i>
+                            <span>Рус</span>
+                            <i class="icon icon-arrows"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Каз</a>
+                            </li>
+                            <li>
+                                <a href="#">Eng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="mainPage payment-page">
+            <div class="mainPage-content">
+                <div class="payment-content">
+                    <div class="payment-left">
+                        <div class="payment-course payment-course-xs">
+                            <div class="payment-course-img">
+                                <img src="img/content/paymnet-img.png">
+                            </div>
+                            <div class="payment-course-caption">
+                                <p class="payment-course-title">ТРАНСПОРТ</p>
+                                <h6>Абстрактная математика для первого курса</h6>
+                                <div class="courseCard-rate">
+                                    <i class="icon icon-star"></i>
+                                    <p>4.8 <span>(126)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-period">
+                            <h3 class="course-title">Выберите период подписки</h3>
+                            <div class="payment-button-wrapper">
+                                <div class="payment-button">
+                                    <div class="check-mark-icon">
+                                        <i class="icon"></i>
+                                    </div>
+                                    <span>Курс на 1 месяц</span>
+                                    <input type="radio" name="payment-radio">
+                                </div>
+                                <div class="payment-button">
+                                    <div class="check-mark-icon">
+                                        <i class="icon"></i>
+                                    </div>
+                                    <span>Курс на 2 месяца</span>
+                                    <input type="radio" name="payment-radio">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-type">
+                            <h3 class="course-title">Выберите способ оплаты</h3>
+                            <div class="payment-item-wrapper">
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/walletone.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Walletone</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/bitmap.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Paybox</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/paypost.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Paypost</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/robokassa.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Robokassa</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/kiwi.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Qiwi</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/epay.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Epay</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div class="payment-item">
+                                    <div class="payment-img">
+                                        <img src="img/content/kaspi.png">
+                                    </div>
+                                    <div class="payment-caption">
+                                        <span>Kaspi перевод</span>
+                                        <i class="icon arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-right">
+                        <div class="promocode">
+                            <div class="promo-input">
+                                <input type="text" placeholder="Введите промокод"></input>
+                                <button class="btn-plain">
+                                    <i class="icon icon-close-grey"></i>
+                                </button>
+                            </div>
+                            <button class="btn-plain promo-enter">Применить</button>
+                        </div>
+                        <div class="payment-price">
+                            <div class="payment-price-item common-price">
+                                <p>Итого</p>
+                                <span>2,585₸</span>
+                            </div>
+                            <div class="payment-price-item">
+                                <p>Стоимость</p>
+                                <span>4,500₸</span>
+                            </div>
+                            <div class="payment-price-item">
+                                <p>Скидка 50%</p>
+                                <span>2,250₸</span>
+                            </div>
+                        </div>
+                        <div class="payment-course">
+                            <div class="payment-course-img">
+                                <img src="img/content/paymnet-img.png">
+                            </div>
+                            <div class="payment-course-caption">
+                                <p class="payment-course-title">ТРАНСПОРТ</p>
+                                <h6>Абстрактная математика для первого курса</h6>
+                                <div class="courseCard-rate">
+                                    <i class="icon icon-star"></i>
+                                    <p>4.8 <span>(126)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+</div>
+
+<div class="modal modal-box" id="payment_modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6>Kaspi перевод</h6>
+            <button class="btn-plain modal-close">
+                <i class="icon close-gray-fill"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p class="payment-modal-title">Переведите  <span class="text-blue">2,585₸</span> по реквизитам указанный ниже и прикрепите чек.</p>
+            <div class="payment-modal-card">
+                <p>5169 0001 2345 8965</p>
+                <span>balzhanovna aizhan</span>
+            </div>
+            <div class="payment-modal-form">
+                <div class="payment-form">
+                    <span>Номер карты</span>
+                    <div class="payment-form-right">
+                        <p>5169 0001 2345 8965</p>
+                        <button class="btn-plain btn-copy">
+                            <i class="icon icon-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="payment-form">
+                    <span>Номер телефона</span>
+                    <div class="payment-form-right">
+                        <p>+7 (707) 456 78-89</p>
+                        <button class="btn-plain btn-copy">
+                            <i class="icon icon-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="payment-form">
+                    <span>ИИН</span>
+                    <div class="payment-form-right">
+                        <p>894578789456</p>
+                        <button class="btn-plain btn-copy">
+                            <i class="icon icon-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="payment-form">
+                    <span>ФИО</span>
+                    <div class="payment-form-right">
+                        <p>Балжановна А.Б.</p>
+                        <button class="btn-plain btn-copy">
+                            <i class="icon icon-copy"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-modal-bottom">
+                <div class="enter-check">
+                    <input type="file">
+                    <p>Прикрепите чек</p>
+                    <div class="enter-check-empty">
+                        <span>Загрузите чек</span>
+                        <i class="icon arrow-right"></i>
+                    </div>
+                    <div class="enter-check-filled">
+                        <img src="img/content/check.png">
+                        <button class="btn-plain check-delete">
+                            <i class="icon delete-icon"></i>
+                        </button>
+                    </div>
+                </div>
+                <input type="submit" class="btn-plain btn-pay" value="Подтвердить оплату" disabled></input>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    //sub time
+    $('.payment-button input').click(function (){
+        $('.payment-button').removeClass('active');
+        if($(this).is(':checked')){
+            $(this).closest('.payment-button').addClass('active');
+        }
+    })
+
+    // promo code
+    $('.promo-input input').keyup(function (){
+        if($(this).val() != 0) {
+            $('.promo-input').addClass('active');
+        } else {
+            $('.promo-input').removeClass('active');
+        }
+    })
+
+    $('.promo-input button').click(function (){
+        $('.promo-input input').val('');
+        $('.promo-input').removeClass('active');
+    })
+
+    $('.promo-enter').click(function (){
+        $(this).addClass('active');
+        $(this).html('Промокод применен');
+    })
+
+    //modal
+    $('.payment-item').click(function (){
+        $('#payment_modal').modal('show');
+    })
+
+    $('.check-delete').click(function (){
+        $('.enter-check input').val('');
+        $('.btn-pay ').attr('disabled',true);
+        $('.enter-check').removeClass('filled');
+        $('.btn-pay ').removeClass('active');
+    })
+
+    $('.enter-check input').change(function() {
+        if($(this).val() == '') {
+            $('.btn-pay ').attr('disabled',true);
+            $('.enter-check').removeClass('filled');
+            $('.btn-pay ').removeClass('active');
+        } else {
+            $('.btn-pay ').removeAttr('disabled');
+            $('.enter-check').addClass('filled');
+            $('.btn-pay ').addClass('active');
+        }
+    });
+
+</script>
+</body>
+</html>

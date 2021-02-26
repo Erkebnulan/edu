@@ -1,0 +1,39 @@
+:root {
+  --white: #fff;
+  --white-bg: #FEFEFE;
+  --black: #111621;
+  --light-gray: #ACB4BE;
+  --green: #458E22;
+  --pearl: #F5F5F5;
+  --blue: #5559F4;
+  --red: #FF3B30;
+  --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
+  --gray: #808191;
+  --black-bg: #424242;
+}
+
+$white: var(--white);
+$white-bg: var(--white-bg);
+$black: var(--black);
+$light-gray: var(--gray);
+$green: var(--green);
+$pearl: var(--pearl);
+$blue: var(--blue);
+$red: var(--red);
+$gradient: var(--gradient);
+$gray: var(--gray);
+$black-bg: var(--black-bg);
+
+.dark-mode {
+  --white: #121212;
+  --white-bg: #000000;
+  --black: #F9F9F9;
+  --light-gray: #292B2E;
+  --green: #5F874C;
+  --pearl: #1D1D1D;
+  --blue: #5559C8;
+  --red: #C83B30;
+  --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
+  --gray: #4C4C50;
+  --black-bg: #424242;
+}
