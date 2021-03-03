@@ -31,7 +31,7 @@ body {
 }
 
 .main-aside::-webkit-scrollbar {
-  width: 5px;
+  display: none;
 }
 
 .main-aside::-webkit-scrollbar-track {
@@ -778,6 +778,8 @@ header.sticky .header-title {
 .courseCard-rate p span {
   opacity: 0.8;
   display: none;
+  letter-spacing: 0.16px;
+  font-weight: 400;
 }
 
 .courseCard-caption-bottom {
@@ -1068,6 +1070,11 @@ header.sticky .header-title {
     display: inline-block;
   }
 
+  .courseCard-rate p {
+    font-size: 10px!important;
+    line-height: 12px!important;
+  }
+
   .courseCard-caption-bottom {
     margin-top: 0;
     flex-direction: column;
@@ -1288,6 +1295,7 @@ header.sticky .header-title {
   justify-content: space-between;
   padding-bottom: 13px;
   border-bottom: 0.5px solid #E5E5E5;
+  position: relative;
 }
 
 .program-heading {
@@ -1779,12 +1787,11 @@ header.sticky .header-title {
   border: 2px solid $pearl;
   border-radius: 12px;
   width: 48%;
-  height: 56px;
   display: flex;
   align-items: center;
   position: relative;
   background: $white;
-  padding: 0 18px;
+  padding: 16px 18px;
   transition: 0.3s ease;
 }
 
@@ -2458,6 +2465,15 @@ header.sticky .header-title {
   margin-right: 4px;
 }
 
+.combo-meta .courseCard-meta li p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.combo-meta .courseCard-rate p {
+  color: $gray;
+}
+
 .combo-meta .courseCard-rate p span {
   display: inline-block;
 }
@@ -2542,6 +2558,7 @@ header.sticky .header-title {
   line-height: 20px;
   letter-spacing: -0.24px;
   color: $light-gray;
+  font-weight: 400;
 }
 
 .authorize-bottom {
@@ -2553,7 +2570,7 @@ header.sticky .header-title {
 }
 
 .pwd-forget {
-  margin: 8px auto 0 auto;
+  margin: 28px auto 0 auto;
   font-family: "Inter";
   font-size: 14px;
   line-height: 16px;
@@ -2815,6 +2832,11 @@ header.sticky .header-title {
   text-transform: uppercase;
   color: $gray;
   position: relative;
+  transition: 0.3s ease;
+}
+
+.string-tablink.active {
+  color: $blue;
 }
 
 .string-tablink.active:after {
@@ -2862,6 +2884,12 @@ header.sticky .header-title {
   border-radius: 4px;
   overflow: hidden;
   margin-right: 16px;
+}
+
+.journalCard-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .journalCard-caption {
@@ -3663,7 +3691,6 @@ header.sticky .header-title {
   letter-spacing: -0.08px;
   display: block;
   color: $blue;
-  min-width: 45px;
   text-align: right;
 }
 
@@ -4348,6 +4375,23 @@ header.sticky .header-title {
   margin-top: 16px;
 }
 
+.fixed-testBox {
+  max-height: calc(100vh - 327px);
+  overflow-y: auto;
+}
+
+.fixed-testBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.fixed-testBox::-webkit-scrollbar-track {
+  background: $light-gray;
+}
+
+.fixed-testBox::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+
 .test-number {
   font-weight: 600;
   font-size: 13px;
@@ -4430,10 +4474,11 @@ header.sticky .header-title {
 }
 
 .test-content-bottom {
-  padding-top: 12px;
+  padding: 12px 0 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 0.5px solid #E5E5E5;
 }
 
 .btn-white {
@@ -5489,6 +5534,7 @@ header.sticky .header-title {
 .walletModal-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .walletModal-header .modal-close {
@@ -5642,6 +5688,10 @@ header.sticky .header-title {
   display: flex;
   justify-content: flex-end;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.profile-bottom .btn-main {
+  font-size: 15px;
 }
 
 .profile .radio-container {
@@ -6090,9 +6140,52 @@ header.authorized .header-authorize {
   background-color: #eee;
 }
 
+.reward {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  background: #FACC56;
+  box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
+  border-radius: 4px;
+}
 
+.statisticsCard .courseCard-img {
+  position: relative;
+}
 
+.reward span {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  color: $black;
+  display: block;
+}
 
+.courseInfo .courseCard-rate p span {
+  display: inline-block;
+}
+
+.courseComment .course-title {
+  margin-top: 0;
+}
+
+.journalCard-caption-bottom .courseCard-price span {
+  text-decoration: none;
+  color: $gray;
+}
+
+header.not-scroll {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  margin-top: 0;
+}
+
+.testPage {
+  padding-top: 24px!important;
+}
 
 
 @import "media";

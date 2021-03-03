@@ -153,7 +153,7 @@ body {
 }
 
 .main-aside::-webkit-scrollbar {
-  width: 5px;
+  display: none;
 }
 
 .main-aside::-webkit-scrollbar-track {
@@ -315,7 +315,7 @@ body {
   letter-spacing: -0.08px;
   color: var(--black);
   margin-left: 8px;
-  border-bottom: 0.5px solid var(--gray);
+  border-bottom: 0.5px solid var(--light-gray);
 }
 
 .icon-google {
@@ -858,7 +858,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .course-tab {
@@ -979,7 +979,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .courseCard-caption h6 {
@@ -1079,6 +1079,8 @@ header.sticky .header-title {
 .courseCard-rate p span {
   opacity: 0.8;
   display: none;
+  letter-spacing: 0.16px;
+  font-weight: 400;
 }
 
 .courseCard-caption-bottom {
@@ -1298,7 +1300,7 @@ header.sticky .header-title {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.337647px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .search-form input::-moz-placeholder {
@@ -1306,7 +1308,7 @@ header.sticky .header-title {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.337647px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .search-form input:-ms-input-placeholder {
@@ -1314,7 +1316,7 @@ header.sticky .header-title {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.337647px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .search-form input::-ms-input-placeholder {
@@ -1322,7 +1324,7 @@ header.sticky .header-title {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.337647px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .search-form input::placeholder {
@@ -1330,7 +1332,7 @@ header.sticky .header-title {
   font-size: 28px;
   line-height: 34px;
   letter-spacing: 0.337647px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .result-number {
@@ -1338,7 +1340,7 @@ header.sticky .header-title {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.35px;
-  color: var(--gray);
+  color: var(--light-gray);
   margin-bottom: 15px;
 }
 
@@ -1483,6 +1485,11 @@ header.sticky .header-title {
 
 .search-result .courseCard-rate p span {
   display: inline-block;
+}
+
+.search-result .courseCard-rate p {
+  font-size: 10px !important;
+  line-height: 12px !important;
 }
 
 .search-result .courseCard-caption-bottom {
@@ -1747,6 +1754,7 @@ header.sticky .header-title {
           justify-content: space-between;
   padding-bottom: 13px;
   border-bottom: 0.5px solid #E5E5E5;
+  position: relative;
 }
 
 .program-heading {
@@ -2137,7 +2145,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .comment-rate {
@@ -2159,7 +2167,7 @@ header.sticky .header-title {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.16px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .comment-rate-left p {
@@ -2367,7 +2375,6 @@ header.sticky .header-title {
   border: 2px solid var(--pearl);
   border-radius: 12px;
   width: 48%;
-  height: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2376,7 +2383,7 @@ header.sticky .header-title {
           align-items: center;
   position: relative;
   background: var(--white);
-  padding: 0 18px;
+  padding: 16px 18px;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -2552,35 +2559,35 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .promo-input input::-moz-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .promo-input input:-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .promo-input input::-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .promo-input input::placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .promo-input button {
@@ -2646,7 +2653,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .payment-price-item span {
@@ -2873,7 +2880,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
   display: block;
 }
 
@@ -2940,7 +2947,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--gray);
+  color: var(--light-gray);
   margin-top: 24px;
 }
 
@@ -2983,7 +2990,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
   display: block;
   margin-right: 8px;
 }
@@ -3200,6 +3207,15 @@ header.sticky .header-title {
   margin-right: 4px;
 }
 
+.combo-meta .courseCard-meta li p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.combo-meta .courseCard-rate p {
+  color: var(--gray);
+}
+
 .combo-meta .courseCard-rate p span {
   display: inline-block;
 }
@@ -3288,35 +3304,40 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
+  font-weight: 400;
 }
 
 .authorize-input-form input::-moz-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
+  font-weight: 400;
 }
 
 .authorize-input-form input:-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
+  font-weight: 400;
 }
 
 .authorize-input-form input::-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
+  font-weight: 400;
 }
 
 .authorize-input-form input::placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
+  font-weight: 400;
 }
 
 .authorize-bottom {
@@ -3328,7 +3349,7 @@ header.sticky .header-title {
 }
 
 .pwd-forget {
-  margin: 8px auto 0 auto;
+  margin: 28px auto 0 auto;
   font-family: "Inter";
   font-size: 14px;
   line-height: 16px;
@@ -3513,9 +3534,9 @@ header.sticky .header-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: url("../img/icon/user-icon.svg") no-repeat center/contain, -webkit-gradient(linear, left top, left bottom, from(#B9CBCD), to(var(--gray)));
-  background: url("../img/icon/user-icon.svg") no-repeat center/contain, -o-linear-gradient(top, #B9CBCD 0%, var(--gray) 100%);
-  background: url("../img/icon/user-icon.svg") no-repeat center/contain, linear-gradient(180deg, #B9CBCD 0%, var(--gray) 100%);
+  background: url("../img/icon/user-icon.svg") no-repeat center/contain, -webkit-gradient(linear, left top, left bottom, from(#B9CBCD), to(var(--light-gray)));
+  background: url("../img/icon/user-icon.svg") no-repeat center/contain, -o-linear-gradient(top, #B9CBCD 0%, var(--light-gray) 100%);
+  background: url("../img/icon/user-icon.svg") no-repeat center/contain, linear-gradient(180deg, #B9CBCD 0%, var(--light-gray) 100%);
   background-size: 16px;
   position: relative;
 }
@@ -3663,6 +3684,13 @@ header.sticky .header-title {
   text-transform: uppercase;
   color: var(--gray);
   position: relative;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.string-tablink.active {
+  color: var(--blue);
 }
 
 .string-tablink.active:after {
@@ -3720,6 +3748,13 @@ header.sticky .header-title {
   border-radius: 4px;
   overflow: hidden;
   margin-right: 16px;
+}
+
+.journalCard-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .journalCard-caption {
@@ -4674,7 +4709,6 @@ header.sticky .header-title {
   letter-spacing: -0.08px;
   display: block;
   color: var(--blue);
-  min-width: 45px;
   text-align: right;
 }
 
@@ -4927,7 +4961,7 @@ header.sticky .header-title {
   width: 20px;
   left: -3px;
   top: -3px;
-  background: var(--gray);
+  background: var(--light-gray);
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: .4s;
@@ -5064,7 +5098,7 @@ header.sticky .header-title {
 }
 
 .iframe iframe {
-  background: var(--gray);
+  background: var(--light-gray);
   width: 100%;
   height: 100%;
   border: none;
@@ -5296,7 +5330,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
   display: block;
   margin-top: 5px;
 }
@@ -5390,7 +5424,7 @@ header.sticky .header-title {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--gray);
+  background: var(--light-gray);
 }
 
 .test-landing-content a {
@@ -5488,6 +5522,23 @@ header.sticky .header-title {
   margin-top: 16px;
 }
 
+.fixed-testBox {
+  max-height: calc(100vh - 327px);
+  overflow-y: auto;
+}
+
+.fixed-testBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.fixed-testBox::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+.fixed-testBox::-webkit-scrollbar-thumb {
+  background: var(--gray);
+}
+
 .test-number {
   font-weight: 600;
   font-size: 13px;
@@ -5530,7 +5581,7 @@ header.sticky .header-title {
 }
 
 .radio-container .checkmark {
-  border: 1px solid var(--gray);
+  border: 1px solid var(--light-gray);
   border-radius: 2px;
   width: 20px;
   height: 20px;
@@ -5584,7 +5635,7 @@ header.sticky .header-title {
 }
 
 .test-content-bottom {
-  padding-top: 12px;
+  padding: 12px 0 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5594,6 +5645,7 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-top: 0.5px solid #E5E5E5;
 }
 
 .btn-white {
@@ -5654,8 +5706,8 @@ header.sticky .header-title {
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
-  background: var(--gray);
-  border: 2px solid var(--gray);
+  background: var(--light-gray);
+  border: 2px solid var(--light-gray);
 }
 
 .btn-gray:hover {
@@ -5841,7 +5893,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .textarea-form::-moz-placeholder {
@@ -5849,7 +5901,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .textarea-form:-ms-input-placeholder {
@@ -5857,7 +5909,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .textarea-form::-ms-input-placeholder {
@@ -5865,7 +5917,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .textarea-form::placeholder {
@@ -5873,7 +5925,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .btn-send {
@@ -6386,7 +6438,7 @@ header.sticky .header-title {
   left: 0;
   width: 1px;
   height: 16px;
-  background: var(--gray);
+  background: var(--light-gray);
 }
 
 .testProgram-certificate-download {
@@ -6726,7 +6778,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--gray);
+  color: var(--light-gray);
   margin-top: 10px;
   display: block;
 }
@@ -6870,6 +6922,9 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .walletModal-header .modal-close {
@@ -7048,6 +7103,10 @@ header.sticky .header-title {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.profile-bottom .btn-main {
+  font-size: 15px;
+}
+
 .profile .radio-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -7103,35 +7162,35 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .input-form input::-moz-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .input-form input:-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .input-form input::-ms-input-placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .input-form input::placeholder {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--gray);
+  color: var(--light-gray);
 }
 
 .term-content p {
@@ -7351,7 +7410,7 @@ header.sticky .header-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 0.5px solid var(--gray);
+  border-bottom: 0.5px solid var(--light-gray);
 }
 
 .report .courseCard {
@@ -7422,7 +7481,7 @@ header.sticky .header-title {
 .report-left {
   width: 64%;
   padding-right: 16px;
-  border-right: 0.5px solid var(--gray);
+  border-right: 0.5px solid var(--light-gray);
 }
 
 .report-right {
@@ -7598,6 +7657,55 @@ header.authorized .header-authorize {
 
 .bootstrap-datetimepicker-widget .datepicker-days table tbody tr:hover {
   background-color: #eee;
+}
+
+.reward {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  padding: 6px 12px;
+  background: #FACC56;
+  -webkit-box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
+          box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
+  border-radius: 4px;
+}
+
+.statisticsCard .courseCard-img {
+  position: relative;
+}
+
+.reward span {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  color: var(--black);
+  display: block;
+}
+
+.courseInfo .courseCard-rate p span {
+  display: inline-block;
+}
+
+.courseComment .course-title {
+  margin-top: 0;
+}
+
+.journalCard-caption-bottom .courseCard-price span {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+header.not-scroll {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: var(--white);
+  margin-top: 0;
+}
+
+.testPage {
+  padding-top: 24px !important;
 }
 
 @media (max-width: 1200px) and (min-width: 1024px) {
@@ -8212,7 +8320,7 @@ header.authorized .header-authorize {
   }
   .search-form {
     width: 100%;
-    padding: 10px 8px 10px 15px;
+    padding: 8px 8px 8px 15px;
     background: #F5F5F5;
     border-radius: 4px;
     border: none;
@@ -8357,7 +8465,7 @@ header.authorized .header-authorize {
     padding: 0 15px;
   }
   .course-sticky-inner {
-    display: block;
+    display: none;
     padding-right: 0;
   }
   .course-sticky h4 {
@@ -8384,23 +8492,24 @@ header.authorized .header-authorize {
     display: none;
   }
   .courseInfo .courseInfo-purchase {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .courseInfo .courseInfo-purchase .courseInfo-price {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-right: auto;
-  }
-  .courseInfo .courseInfo-purchase a {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  .courseInfo .courseInfo-purchase a {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     width: 100%;
     margin-top: 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .program {
     margin-top: 0;
@@ -8459,25 +8568,39 @@ header.authorized .header-authorize {
     display: none;
   }
   .payment-button-wrapper {
-    display: block;
-  }
-  .payment-button-wrapper .payment-button + .payment-button {
-    margin-top: 10px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .payment-button {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 12px 14px 10px 14px;
+    width: 48%;
   }
   .payment-button span {
-    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
   }
   #payment_modal .modal-content {
-    width: 90%;
+    width: 95% !important;
+    padding: 16px;
   }
-  .payment-form {
-    display: block !important;
+  #payment_modal .modal-header h6 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  #payment_modal .payment-form span {
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+  }
+  #payment_modal .payment-form-right p {
+    margin-left: auto;
   }
   #payment_modal .payment-form-right {
     margin-top: 5px;
@@ -8489,18 +8612,48 @@ header.authorized .header-authorize {
   #payment_modal .btn-copy {
     width: 25px;
     height: 25px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 0;
   }
   #payment_modal .btn-copy i {
-    width: 20px;
-    height: 24px;
+    width: 14px;
+    height: 16px;
+  }
+  #payment_modal .payment-form {
+    padding: 8.5px 0;
+  }
+  #payment_modal .enter-check p {
+    font-size: 15px;
+    line-height: 20px;
   }
   #payment_modal .modal-close {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   #payment_modal .modal-close i {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+  #payment_modal .modal-body {
+    margin-top: 9px;
+  }
+  #payment_modal .modal-body::-webkit-scrollbar {
+    width: 3px;
+  }
+  #payment_modal .payment-modal-card {
+    margin-top: 16px;
+    height: 198px;
+    padding: 16px 16px 16px 18px;
+    background-size: cover !important;
+  }
+  #payment_modal .payment-modal-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .testCard-wrapper {
+    margin-top: 16px;
   }
   .testCard {
     -webkit-box-orient: vertical;
@@ -8510,6 +8663,8 @@ header.authorized .header-authorize {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin: 0 -15px;
+    border-radius: 0;
   }
   .testCard-right {
     display: -webkit-box;
@@ -8519,11 +8674,20 @@ header.authorized .header-authorize {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 16px;
+  }
+  .testCard-wrapper .testCard + .testCard {
+    margin-top: 8px;
   }
   .testCard .courseCard-btn {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    padding: 0;
+    border: none;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 20px;
   }
   .authorize-content {
     width: 100%;
@@ -8677,23 +8841,24 @@ header.authorized .header-authorize {
     border: none;
     padding: 0;
   }
+  .journalCard-wrapper {
+    margin: 16px -15px 0 -15px;
+  }
   .journalCard {
     width: 100%;
+    margin: 4px 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-  .journalCard-img {
-    width: 100px;
-    height: 131px;
+    border-radius: 0;
   }
   .journalCard-caption {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .journalCard-caption .courseCard-btn {
-    width: 100%;
+  .journalCard-caption .testCard-title {
+    max-width: 80%;
   }
   .journalCard-caption .courseCard-meta {
     margin-top: 5px;
@@ -8704,8 +8869,6 @@ header.authorized .header-authorize {
   }
   .teacherCard-caption span {
     margin-top: 5px;
-    font-size: 12px;
-    line-height: 110%;
   }
   .tableItem-name a {
     margin-left: 0;
@@ -8872,9 +9035,8 @@ header.authorized .header-authorize {
   }
   .string-tab {
     overflow-y: auto;
-    margin: 8px -15px 0 -15px;
-    padding: 0 15px;
-    border-bottom: none;
+    margin: -15px -15px 0 -15px;
+    padding: 8px 15px 0 15px;
   }
   .author-page .string-tab {
     margin-top: 8px;
@@ -9231,7 +9393,7 @@ header.authorized .header-authorize {
     padding-right: 0;
     border-right: none;
     padding-bottom: 17px;
-    border-bottom: 0.5px solid var(--gray);
+    border-bottom: 0.5px solid var(--light-gray);
   }
   .report .courseCard-img {
     width: 74px;
@@ -9391,6 +9553,80 @@ header.authorized .header-authorize {
     margin-top: 23px;
     padding-left: 0;
   }
+  #payment_modal .payment-modal-card p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  #payment_modal .payment-modal-card span {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .courseInfo .courseInfo-meta {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .courseInfo-text p {
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 82px;
+  }
+  .courseProgram .program-video-link {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+  }
+  .courseProgram .program-video-play {
+    width: 20px;
+    height: 20px;
+  }
+  .courseProgram .program-video-play i {
+    width: 10px;
+    height: 10px;
+  }
+  .courseProgram .program-head {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .courseProgram .program-open {
+    margin-top: 20px;
+  }
+  .courseProgram .program-blocked {
+    margin-top: 16px;
+  }
+  .courseProgram .program-heading {
+    padding-right: 60px;
+  }
+  .courseProgram .program-caption .courseCard-meta {
+    padding-right: 60px;
+  }
+  .courseProgram .collapse-btn {
+    margin-top: 12px;
+  }
+  .courseComment .course-title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .pwd-restore .authorize-bottom {
+    margin-top: 24px;
+  }
+  .fixed-testBox {
+    max-height: initial;
+    overflow-y: initial;
+  }
+  .walletModal-body {
+    margin-top: 16px;
+  }
+  .walletModal-body-caption p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .walletModal-body .btn-main {
+    border-radius: 8px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -9453,6 +9689,45 @@ header.authorized .header-authorize {
   .teacherCard-img {
     width: 30px;
     height: 30px;
+  }
+  .courseInfo .courseInfo-purchase {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .courseInfo .courseInfo-purchase .courseInfo-price {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-right: auto;
+  }
+  .courseInfo .courseInfo-purchase a {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  .payment-button span {
+    font-size: 12px;
+  }
+  #payment_modal .payment-modal-card {
+    height: 170px;
+  }
+  #payment_modal .payment-modal-card p {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  #payment_modal .payment-modal-card span {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #payment_modal .payment-form-right p {
+    font-size: 13px;
+  }
+  #payment_modal .payment-form span {
+    font-size: 12px;
   }
 }
 

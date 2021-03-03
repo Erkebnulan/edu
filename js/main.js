@@ -23,9 +23,10 @@ $(document).ready(function (){
 
 //header sticky
 $(window).scroll(function(){
-    if ($(window).width() > 767 && $(window).scrollTop() >= 24) {
+    if ($(window).width() > 767 && $(window).scrollTop() >= 24 && !$('header').hasClass('not-scroll')) {
         $('header').addClass('sticky');
-    } else if ($(window).width() > 767 && $(window).scrollTop() <= 24 && !$('.main-article').hasClass('searching')) {
+    } else if ($(window).width() > 767 && $(window).scrollTop() <= 24 && !$('.main-article').hasClass('searching')
+        && !$('header').hasClass('not-scroll')) {
         $('header').removeClass('sticky');
     }
 });
@@ -34,6 +35,7 @@ $(document).ready(function (){
         $('header').addClass('sticky')
     }
 })
+
 
 //search window
 $('.search-btn').click(function (){

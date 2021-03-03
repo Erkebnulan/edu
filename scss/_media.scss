@@ -525,7 +525,7 @@
   }
   .search-form {
     width: 100%;
-    padding: 10px 8px 10px 15px;
+    padding: 8px 8px 8px 15px;
     background: #F5F5F5;
     border-radius: 4px;
     border: none;
@@ -644,7 +644,7 @@
     padding: 0 15px;
   }
   .course-sticky-inner {
-    display: block;
+    display: none;
     padding-right: 0;
   }
   .course-sticky h4 {
@@ -668,15 +668,15 @@
     display: none;
   }
   .courseInfo .courseInfo-purchase {
-    flex-direction: column;
+    justify-content: space-between;
     .courseInfo-price {
-      order: 1;
-      margin-right: auto;
+      order: 2;
     }
     a {
-      order: 2;
+      order: 1;
       width: 100%;
       margin-top: 10px;
+      width: fit-content;
     }
   }
   .program {
@@ -722,23 +722,33 @@
     display: none;
   }
   .payment-button-wrapper {
-    display: block;
-  }
-  .payment-button-wrapper .payment-button + .payment-button {
-    margin-top: 10px;
+    flex-wrap: nowrap;
   }
   .payment-button {
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 14px 10px 14px;
+    width: 48%;
   }
   .payment-button span {
-    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
   }
   #payment_modal .modal-content {
-    width: 90%;
+    width: 95% !important;
+    padding: 16px;
   }
-  .payment-form {
-    display: block!important;
+  #payment_modal .modal-header h6 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  #payment_modal .payment-form span {
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+  }
+  #payment_modal .payment-form-right p {
+    margin-left: auto;
   }
   #payment_modal .payment-form-right {
     margin-top: 5px;
@@ -748,30 +758,69 @@
   #payment_modal .btn-copy {
     width: 25px;
     height: 25px;
+    justify-content: flex-end;
+    margin-left: 0;
   }
   #payment_modal .btn-copy i {
-    width: 20px;
-    height: 24px;
+    width: 14px;
+    height: 16px;
+  }
+  #payment_modal .payment-form {
+    padding: 8.5px 0;
+  }
+  #payment_modal .enter-check p {
+    font-size: 15px;
+    line-height: 20px;
   }
   #payment_modal .modal-close {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   #payment_modal .modal-close i {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+  #payment_modal .modal-body {
+    margin-top: 9px;
+  }
+  #payment_modal .modal-body::-webkit-scrollbar {
+    width: 3px;
+  }
+  #payment_modal .payment-modal-card {
+    margin-top: 16px;
+    height: 198px;
+    padding: 16px 16px 16px 18px;
+    background-size: cover!important;
+  }
+  #payment_modal .payment-modal-title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .testCard-wrapper {
+    margin-top: 16px;
   }
   .testCard {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 -15px;
+    border-radius: 0;
   }
   .testCard-right {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-top: 16px;
+  }
+  .testCard-wrapper .testCard + .testCard {
+    margin-top: 8px;
   }
   .testCard .courseCard-btn {
     width: fit-content;
+    padding: 0;
+    border: none;
+    margin-top: 0;
+    font-size: 15px;
+    line-height: 20px;
   }
   .authorize-content {
     width: 100%;
@@ -892,19 +941,20 @@
     border: none;
     padding: 0;
   }
+  .journalCard-wrapper {
+    margin: 16px -15px 0 -15px;
+  }
   .journalCard {
     width: 100%;
+    margin: 4px 0;
     align-items: flex-start;
-  }
-  .journalCard-img {
-    width: 100px;
-    height: 131px;
+    border-radius: 0;
   }
   .journalCard-caption {
     flex: 1;
   }
-  .journalCard-caption .courseCard-btn {
-    width: 100%;
+  .journalCard-caption .testCard-title {
+    max-width: 80%;
   }
   .journalCard-caption .courseCard-meta {
     margin-top: 5px;
@@ -915,8 +965,6 @@
   }
   .teacherCard-caption span {
     margin-top: 5px;
-    font-size: 12px;
-    line-height: 110%;
   }
   .tableItem-name a {
     margin-left: 0;
@@ -1061,9 +1109,8 @@
   }
   .string-tab {
     overflow-y: auto;
-    margin: 8px -15px 0 -15px;
-    padding: 0 15px;
-    border-bottom: none;
+    margin: -15px -15px 0 -15px;
+    padding: 8px 15px 0 15px;
   }
   .author-page .string-tab {
     margin-top: 8px;
@@ -1522,7 +1569,77 @@
     margin-top: 23px;
     padding-left: 0;
   }
-
+  #payment_modal .payment-modal-card p {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  #payment_modal .payment-modal-card span {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .courseInfo .courseInfo-meta {
+    flex-wrap: wrap;
+  }
+  .courseInfo-text p {
+    font-size: 15px;
+    line-height: 20px;
+    max-height: 82px;
+  }
+  .courseProgram .program-video-link {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+  }
+  .courseProgram .program-video-play {
+    width: 20px;
+    height: 20px;
+  }
+  .courseProgram .program-video-play i {
+    width: 10px;
+    height: 10px;
+  }
+  .courseProgram .program-head {
+    align-items: flex-start;
+  }
+  .courseProgram .program-open {
+    margin-top: 20px;
+  }
+  .courseProgram .program-blocked {
+    margin-top: 16px;
+  }
+  .courseProgram .program-heading {
+    padding-right: 60px;
+  }
+  .courseProgram .program-caption .courseCard-meta {
+    padding-right: 60px;
+  }
+  .courseProgram .collapse-btn {
+    margin-top: 12px;
+  }
+  .courseComment .course-title {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .pwd-restore .authorize-bottom {
+    margin-top: 24px;
+  }
+  .fixed-testBox {
+    max-height: initial;
+    overflow-y: initial;
+  }
+  .walletModal-body {
+    margin-top: 16px;
+  }
+  .walletModal-body-caption p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .walletModal-body .btn-main {
+    border-radius: 8px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1573,6 +1690,38 @@
   .teacherCard-img {
     width: 30px;
     height: 30px;
+  }
+  .courseInfo .courseInfo-purchase {
+    flex-direction: column;
+    .courseInfo-price {
+      order: 1;
+      margin-right: auto;
+    }
+    a {
+      order: 2;
+      width: 100%;
+    }
+  }
+  .payment-button span {
+    font-size: 12px;
+  }
+  #payment_modal .payment-modal-card {
+    height: 170px;
+  }
+  #payment_modal .payment-modal-card p {
+    font-size: 18px;
+    line-height: 120%;
+  }
+  #payment_modal .payment-modal-card span {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  #payment_modal .payment-form-right p {
+    font-size: 13px;
+  }
+  #payment_modal .payment-form span {
+    font-size: 12px;
   }
 }
 
