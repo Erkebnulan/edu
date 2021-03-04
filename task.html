@@ -322,7 +322,7 @@
                                 <i class="icon"></i>
                             </button>
                             <div class="audio-player-right">
-                                <input class="audio-range" type="range">
+                                <input type="range" class="audio-range" id="seek-slider" max="100" value="0">
                                 <span class="audio-time">00:00</span>
                             </div>
                         </div>
@@ -414,6 +414,22 @@
             };
         $elasticElement.on('input change keyup', resize);
         resize();
+    });
+
+    //range
+    const audioPlayerContainer = document.getElementById('audio-player-container');
+    const seekSlider = document.getElementById('seek-slider');
+
+    const showRangeProgress = (rangeInput) => {
+        if(rangeInput === seekSlider) {
+            seekSlider.style.setProperty('--seek-before-width', rangeInput.value / rangeInput.max * 100 + '%');
+        } else {
+            seekSlider.style.setProperty('--volume-before-width', rangeInput.value / rangeInput.max * 100 + '%');
+        }
+    }
+
+    seekSlider.addEventListener('input', (e) => {
+        showRangeProgress(e.target);
     });
 
 </script>
