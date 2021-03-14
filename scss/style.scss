@@ -376,12 +376,12 @@ header.sticky .header-title {
 }
 
 .notice-list::-webkit-scrollbar-track {
-  background: $pearl;
+  background: $white;
   border-radius: 0 4px 4px 0;
 }
 
 .notice-list::-webkit-scrollbar-thumb {
-  background: $blue;
+  background: $pearl;
   border-radius: 0 4px 4px 0;
 }
 
@@ -1303,11 +1303,17 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 
 .program-caption {
   flex: 1;
+  max-width: 88%;
+  padding-right: 24px;
 }
 
 .program-caption .courseCard-meta {
@@ -1320,6 +1326,10 @@ header.sticky .header-title {
   align-items: center;
   width: fit-content;
   margin-top: 8px;
+}
+
+.content-open .program-heading {
+  white-space: normal;
 }
 
 .program-open i {
@@ -1814,7 +1824,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $gray;
+  color: $black;
   margin-left: 18px;
   transition: 0.3s ease;
 }
@@ -1965,8 +1975,12 @@ header.sticky .header-title {
   margin-top: 8px;
 }
 
-.promo-enter.active {
+.promo-enter.success{
   color: $green;
+}
+
+.promo-enter.danger {
+  color: $red;
 }
 
 .payment-price {
@@ -2163,14 +2177,14 @@ header.sticky .header-title {
   .payment-modal-card p {
     font-family: "SF Pro Display";
     font-weight: 400;
-    font-size: 28px;
+    font-size: 27px;
     line-height: 34px;
     letter-spacing: 2px;
     color: $white;
   }
 
   .payment-modal-card span {
-    margin-top: 24px;
+    margin-top: 8px;
     font-family: "SF Pro Display";
     font-size: 20px;
     line-height: 24px;
@@ -2333,6 +2347,7 @@ header.sticky .header-title {
     width: 48px;
     height: 48px;
     object-fit: contain;
+    cursor: pointer;
   }
 }
 
@@ -2655,6 +2670,8 @@ header.sticky .header-title {
   letter-spacing: -0.24px;
   color: $white;
   margin-left: 8px;
+  white-space: nowrap;
+  flex: 1;
 }
 
 .authorize-form.pwd .authorize-title {
@@ -2734,7 +2751,6 @@ header.sticky .header-title {
   width: 260px;
   background: $white;
   border-radius: 8px;
-  overflow: hidden;
   margin: 8px;
   filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
 }
@@ -2996,7 +3012,7 @@ header.sticky .header-title {
   line-height: 18px;
   letter-spacing: -0.08px;
   text-transform: uppercase;
-  color: #7A5CEC;
+  color: $blue;
 }
 
 .tableItem-graph {
@@ -3093,7 +3109,6 @@ header.sticky .header-title {
 
 .visitList-status-inner {
   background: linear-gradient(0deg, rgba(69, 142, 34, 0.12), rgba(69, 142, 34, 0.12)), $white;
-  border: 1px solid rgba(69, 142, 34, 0.24);
   box-sizing: border-box;
   border-radius: 8px;
   padding: 8px 12px;
@@ -3110,7 +3125,6 @@ header.sticky .header-title {
 
 .visitList-status-inner.negative {
   background: linear-gradient(0deg, rgba(255, 59, 48, 0.12), rgba(255, 59, 48, 0.12)), $white;
-  border: 1px solid rgba(255, 59, 48, 0.24);
   color: $red;
 }
 
@@ -3507,6 +3521,7 @@ header.sticky .header-title {
   align-items: center;
   justify-content: center;
   margin-left: 8px;
+  display: none;
 }
 
 .referralBox-text {
@@ -3614,6 +3629,10 @@ header.sticky .header-title {
   filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
 }
 
+.course-box-wrapper.course-complete .courseBox-caption-bottom {
+  margin-top: 0;
+}
+
 .courseBox {
   display: flex;
   justify-content: space-between;
@@ -3672,7 +3691,7 @@ header.sticky .header-title {
 }
 
 .courseBox-caption-bottom .program-open p {
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 .progress-wrapper {
@@ -3709,10 +3728,36 @@ header.sticky .header-title {
   flex: 1;
 }
 
-.progress-blue .progress-bar {
-  background-color: $blue;
+.progress-bar {
+  overflow: visible;
+  position: relative;
+  background-color: $white-bg;
   border-radius: 12px;
 }
+
+.progress-blue .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2px);
+  height: 100%;
+  background: $blue;
+  border-radius: 12px;
+}
+
+
+.progress-green .progress-bar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $green;
+  border-radius: 12px;
+}
+
 
 .courseBox-img {
   width: 102px;
@@ -3818,8 +3863,8 @@ header.sticky .header-title {
 
 .check-green {
   background: url("../img/icon/check-green.svg");
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .complete-text p {
@@ -3829,7 +3874,7 @@ header.sticky .header-title {
   letter-spacing: -0.08px;
   text-transform: uppercase;
   color: $green;
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 .progress-green {
@@ -3841,11 +3886,6 @@ header.sticky .header-title {
   background: #D5D6FC;
   border-radius: 12px;
   flex: 1;
-}
-
-.progress-green .progress-bar {
-  background-color: $green;
-  border-radius: 12px;
 }
 
 .progress-complete .progress-value {
@@ -3965,10 +4005,6 @@ header.sticky .header-title {
   letter-spacing: -0.08px;
   color: $gray;
   display: block;
-}
-
-.program.with-progress .program-caption {
-  padding-right: 24px;
 }
 
 .progress-wrapper.program-progress {
@@ -4199,6 +4235,10 @@ header.sticky .header-title {
 .prev-btn, .next-btn {
   position: absolute;
   text-align: center;
+}
+
+.prev-btn-fix, .next-btn-fix {
+  position: fixed;
 }
 
 .prev-btn span, .next-btn span {
@@ -4668,6 +4708,7 @@ header.sticky .header-title {
   line-height: 20px;
   letter-spacing: -0.24px;
   color: $black;
+  appearance: none;
 }
 
 .textarea-form:focus {
@@ -5561,7 +5602,7 @@ header.sticky .header-title {
 
 .profile-title {
   font-family: "Inter";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.08em;
@@ -5651,7 +5692,7 @@ header.sticky .header-title {
   background: $white;
   border: 1px solid #E5E5E5;
   border-radius: 4px;
-  padding: 8px 17px 6px 17px;
+  padding: 8px 17px 6px 8px;
 }
 
 .input-form input {
@@ -5844,6 +5885,11 @@ header.sticky .header-title {
 
 .statistics .courseCard {
   margin: 0;
+  filter: none;
+}
+
+.statistics .courseCard-caption {
+  background: $pearl;
 }
 
 .statistics-title {
@@ -6173,6 +6219,7 @@ header.authorized .header-authorize {
 .journalCard-caption-bottom .courseCard-price span {
   text-decoration: none;
   color: $gray;
+  opacity: 1;
 }
 
 header.not-scroll {
@@ -6187,14 +6234,12 @@ header.not-scroll {
   padding-top: 24px!important;
 }
 
-
-
 #audio-player-container {
   --seek-before-width: 0%;
   --volume-before-width: 100%;
   --buffered-width: 0%;
   position: relative;
-  background: #fff;
+  background: $white;
 }
 .audio-range {
   position: relative;
@@ -6258,7 +6303,7 @@ header.not-scroll {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $white;
   cursor: pointer;
 }
 .audio-range:active::-moz-range-thumb {
@@ -6285,7 +6330,7 @@ header.not-scroll {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: $white;
   cursor: pointer;
 }
 .audio-range:active::-ms-thumb {
@@ -6293,8 +6338,33 @@ header.not-scroll {
   background: $blue;
 }
 
+#loadedImg .modal-content {
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 400px;
+  background: $white;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 35px 20px 20px 20px;
+  position: relative;
+  max-height: 500px;
+}
 
+#loadedImg .modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
+#close_loadedImg {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
 
 @import "media";
 

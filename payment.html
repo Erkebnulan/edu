@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
 
     <link rel="icon" href="img/main/flaticon.svg">
 
@@ -423,6 +424,7 @@
                                     <i class="icon icon-close-grey"></i>
                                 </button>
                             </div>
+                            <!--При клике добавляется класс "success" > color:green, если имеет класс "danger" color:red-->
                             <button class="btn-plain promo-enter">Применить</button>
                         </div>
                         <div class="payment-price">
@@ -532,6 +534,17 @@
     </div>
 </div>
 
+<div class="modal modal-box" id="loadedImg">
+    <div class="modal-content">
+        <button class="btn-plain" id="close_loadedImg">
+            <i class="icon close-gray-fill"></i>
+        </button>
+        <div class="modal-body">
+            <img src="img/content/check.png">
+        </div>
+    </div>
+</div>
+
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
 
@@ -559,8 +572,10 @@
     })
 
     $('.promo-enter').click(function (){
-        $(this).addClass('active');
-        $(this).html('Промокод применен');
+        $(this).addClass('success');
+        if($(this).hasClass('success')) {
+            $(this).html('Промокод применен');
+        }
     })
 
     //modal
@@ -586,6 +601,13 @@
             $('.btn-pay ').addClass('active');
         }
     });
+
+    $('#payment_modal').find('.enter-check-filled img').click(function (){
+        $('#loadedImg').modal('show');
+    });
+    $('#close_loadedImg').click(function (){
+        $(this).closest('#loadedImg').modal('hide');
+    })
 
 </script>
 </body>
