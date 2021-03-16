@@ -3592,6 +3592,7 @@ header.sticky .header-title {
   margin: 8px;
   -webkit-filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
           filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
+  overflow: hidden;
 }
 
 .taskCard-img {
