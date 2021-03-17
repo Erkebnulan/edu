@@ -918,7 +918,7 @@ header.sticky .header-title {
   left: 0;
   width: 100%;
   min-height: calc(100vh - 105px);
-  background: $white;
+  background: $white-bg;
   display: none;
   padding-right: 80px;
   padding-top: 80px;
@@ -1522,7 +1522,7 @@ header.sticky .header-title {
 }
 
 .program.content-open {
-  background: $white-bg;
+  background: $white;
   box-shadow: 0px 2px 24px rgba(0, 1, 83, 0.07);
   border-radius: 4px;
 }
@@ -1614,7 +1614,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $light-gray;
+  color: $gray;
 }
 
 .comment-rate {
@@ -1630,7 +1630,7 @@ header.sticky .header-title {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.16px;
-  color: $light-gray;
+  color: $gray;
 }
 
 .comment-rate-left p {
@@ -3628,7 +3628,7 @@ header.sticky .header-title {
 
 .course-box-wrapper {
   padding: 16px;
-  background: $white-bg;
+  background: $white;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
 }
@@ -4341,13 +4341,12 @@ header.sticky .header-title {
 }
 
 .test-landing-content a {
-  background: white;
+  background: $white;
   border: 2px solid $pearl;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48%;
   padding: 12px 0;
   font-weight: 600;
   font-size: 17px;
@@ -4702,7 +4701,7 @@ header.sticky .header-title {
 .textarea-form {
   margin: 0 8px;
   flex: 1;
-  background: #F6F6F6;
+  background: $pearl;
   border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 12px;
   resize: none;
@@ -5071,7 +5070,7 @@ header.sticky .header-title {
 
 .testProgram {
   margin-top: 16px;
-  background: $white-bg;
+  background: $white;
   border-radius: 4px;
   filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
   padding: 16px;

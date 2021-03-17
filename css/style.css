@@ -193,8 +193,24 @@ button:focus {
   border-top: 1px solid #3d3f42;
 }
 
-.dark-mode .textarea-form {
-  color: #000;
+.dark-mode .textarea-form::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .textarea-form::-moz-placeholder {
+  color: #fff;
+}
+
+.dark-mode .textarea-form:-ms-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .textarea-form::-ms-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .textarea-form::placeholder {
+  color: #fff;
 }
 
 .dark-mode .switch-gray input:checked + .slider {
@@ -203,6 +219,34 @@ button:focus {
 
 .dark-mode .promo-input input {
   color: #fff;
+}
+
+.dark-mode .back-link .arrow-left {
+  background: url("../img/icon/arrow-left-light.svg");
+}
+
+.dark-mode .search-form {
+  border-bottom: 1px solid #3d3f42;
+}
+
+.dark-mode .search-form input::-webkit-input-placeholder {
+  color: #f5f5f5;
+}
+
+.dark-mode .search-form input::-moz-placeholder {
+  color: #f5f5f5;
+}
+
+.dark-mode .search-form input:-ms-input-placeholder {
+  color: #f5f5f5;
+}
+
+.dark-mode .search-form input::-ms-input-placeholder {
+  color: #f5f5f5;
+}
+
+.dark-mode .search-form input::placeholder {
+  color: #f5f5f5;
 }
 
 body {
@@ -1348,7 +1392,7 @@ header.sticky .header-title {
   left: 0;
   width: 100%;
   min-height: calc(100vh - 105px);
-  background: var(--white);
+  background: var(--white-bg);
   display: none;
   padding-right: 80px;
   padding-top: 80px;
@@ -2134,7 +2178,7 @@ header.sticky .header-title {
 }
 
 .program.content-open {
-  background: var(--white-bg);
+  background: var(--white);
   -webkit-box-shadow: 0px 2px 24px rgba(0, 1, 83, 0.07);
           box-shadow: 0px 2px 24px rgba(0, 1, 83, 0.07);
   border-radius: 4px;
@@ -2250,7 +2294,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--light-gray);
+  color: var(--gray);
 }
 
 .comment-rate {
@@ -2272,7 +2316,7 @@ header.sticky .header-title {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.16px;
-  color: var(--light-gray);
+  color: var(--gray);
 }
 
 .comment-rate-left p {
@@ -4718,7 +4762,7 @@ header.sticky .header-title {
 
 .course-box-wrapper {
   padding: 16px;
-  background: var(--white-bg);
+  background: var(--white);
   border-radius: 4px;
   -webkit-filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
           filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
@@ -5565,7 +5609,7 @@ header.sticky .header-title {
 }
 
 .test-landing-content a {
-  background: white;
+  background: var(--white);
   border: 2px solid var(--pearl);
   border-radius: 4px;
   display: -webkit-box;
@@ -5577,7 +5621,6 @@ header.sticky .header-title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 48%;
   padding: 12px 0;
   font-weight: 600;
   font-size: 17px;
@@ -6009,7 +6052,7 @@ header.sticky .header-title {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #F6F6F6;
+  background: var(--pearl);
   border: 1px solid rgba(0, 0, 0, 0.04);
   border-radius: 12px;
   resize: none;
@@ -6462,7 +6505,7 @@ header.sticky .header-title {
 
 .testProgram {
   margin-top: 16px;
-  background: var(--white-bg);
+  background: var(--white);
   border-radius: 4px;
   -webkit-filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
           filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));

@@ -41,13 +41,22 @@
   .authorize-input .authorize-input-form + .authorize-input-form {
     border-top: 1px solid #3d3f42;
   }
-  .textarea-form {
-    color: #000;
+  .textarea-form::placeholder {
+    color: #fff;
   }
   .switch-gray input:checked + .slider {
     background: $pearl;
   }
   .promo-input input {
     color: #fff;
+  }
+  .back-link .arrow-left {
+    background: url("../img/icon/arrow-left-light.svg");
+  }
+  .search-form {
+    border-bottom: 1px solid #3d3f42;
+  }
+  .search-form input::placeholder {
+    color: #f5f5f5;
   }
 }
