@@ -1665,6 +1665,17 @@
   .program-caption {
     max-width: 72%;
   }
+  .sun {
+    width: 20px;
+    height: 20px;
+  }
+  .moon {
+    width: 17px;
+    height: 18px;
+  }
+  .switch-dark-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 320px) {

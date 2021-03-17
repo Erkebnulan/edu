@@ -1,0 +1,53 @@
+.dark-mode {
+  .main-nav a svg path {
+    stroke: #4C4C50;
+  }
+  .mobile-app a svg path {
+    fill: #F9F9F9;
+  }
+  .header-authorize {
+    background: rgba(18, 18, 18, 0.96);
+  }
+  .header-tools {
+    background: rgba(18, 18, 18, 0.96);
+  }
+  .search-btn svg path {
+    fill: #F9F9F9;
+  }
+  .notice-btn svg path {
+    stroke: #F9F9F9;
+  }
+  .lang-change-btn svg path:first-child {
+    stroke: #fff;
+  }
+  .lang-change-btn svg path:nth-child(2) {
+    fill: #fff;
+  }
+  .header-profile {
+    background: rgba(18, 18, 18, 0.96);
+  }
+  .alert span {
+    color: #fff;
+  }
+  .icon-google {
+    background: url("../img/icon/google-play-light.svg");
+  }
+  .icon-apple {
+    background: url("../img/icon/apple-light.svg");
+  }
+  .authorize-input-form input::placeholder {
+    color: #fff;
+  }
+  .authorize-input .authorize-input-form + .authorize-input-form {
+    border-top: 1px solid #3d3f42;
+  }
+  .textarea-form {
+    color: #000;
+  }
+  .switch-gray input:checked + .slider {
+    background: $pearl;
+  }
+  .promo-input input {
+    color: #fff;
+  }
+}

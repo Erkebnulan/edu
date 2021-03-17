@@ -1,7 +1,7 @@
 :root {
   --white: #fff;
   --white-bg: #FEFEFE;
-  --black: #111621;
+  --black: #000000;
   --light-gray: #ACB4BE;
   --green: #458E22;
   --pearl: #F5F5F5;
@@ -10,6 +10,8 @@
   --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
   --gray: #808191;
   --black-bg: #424242;
+  --yellow: #FACC56;
+  --border: #E5E5E5;
 }
 
 $white: var(--white);
@@ -23,6 +25,8 @@ $red: var(--red);
 $gradient: var(--gradient);
 $gray: var(--gray);
 $black-bg: var(--black-bg);
+$yellow: var(--yellow);
+$border: var(--border);
 
 .dark-mode {
   --white: #121212;
@@ -36,4 +40,6 @@ $black-bg: var(--black-bg);
   --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
   --gray: #4C4C50;
   --black-bg: #424242;
+  --yellow: #E9C25E;
+  --border: #3d3f42;
 }

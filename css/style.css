@@ -92,7 +92,7 @@ button:focus {
 :root {
   --white: #fff;
   --white-bg: #FEFEFE;
-  --black: #111621;
+  --black: #000000;
   --light-gray: #ACB4BE;
   --green: #458E22;
   --pearl: #F5F5F5;
@@ -101,6 +101,8 @@ button:focus {
   --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
   --gray: #808191;
   --black-bg: #424242;
+  --yellow: #FACC56;
+  --border: #E5E5E5;
 }
 
 .dark-mode {
@@ -115,6 +117,92 @@ button:focus {
   --gradient: linear-gradient(180deg, #B9CBCD 0%, #ACB4BE 100%);
   --gray: #4C4C50;
   --black-bg: #424242;
+  --yellow: #E9C25E;
+  --border: #3d3f42;
+}
+
+.dark-mode .main-nav a svg path {
+  stroke: #4C4C50;
+}
+
+.dark-mode .mobile-app a svg path {
+  fill: #F9F9F9;
+}
+
+.dark-mode .header-authorize {
+  background: rgba(18, 18, 18, 0.96);
+}
+
+.dark-mode .header-tools {
+  background: rgba(18, 18, 18, 0.96);
+}
+
+.dark-mode .search-btn svg path {
+  fill: #F9F9F9;
+}
+
+.dark-mode .notice-btn svg path {
+  stroke: #F9F9F9;
+}
+
+.dark-mode .lang-change-btn svg path:first-child {
+  stroke: #fff;
+}
+
+.dark-mode .lang-change-btn svg path:nth-child(2) {
+  fill: #fff;
+}
+
+.dark-mode .header-profile {
+  background: rgba(18, 18, 18, 0.96);
+}
+
+.dark-mode .alert span {
+  color: #fff;
+}
+
+.dark-mode .icon-google {
+  background: url("../img/icon/google-play-light.svg");
+}
+
+.dark-mode .icon-apple {
+  background: url("../img/icon/apple-light.svg");
+}
+
+.dark-mode .authorize-input-form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .authorize-input-form input::-moz-placeholder {
+  color: #fff;
+}
+
+.dark-mode .authorize-input-form input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .authorize-input-form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.dark-mode .authorize-input-form input::placeholder {
+  color: #fff;
+}
+
+.dark-mode .authorize-input .authorize-input-form + .authorize-input-form {
+  border-top: 1px solid #3d3f42;
+}
+
+.dark-mode .textarea-form {
+  color: #000;
+}
+
+.dark-mode .switch-gray input:checked + .slider {
+  background: var(--pearl);
+}
+
+.dark-mode .promo-input input {
+  color: #fff;
 }
 
 body {
@@ -243,7 +331,7 @@ body {
 }
 
 .main-aside-bottom {
-  margin-top: 70px;
+  margin-top: 24px;
 }
 
 .faq h6 {
@@ -274,7 +362,7 @@ body {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--black-bg);
+  color: var(--black);
   display: block;
   margin-left: 10px;
 }
@@ -614,7 +702,7 @@ header.sticky .header-title {
 }
 
 .notice-list .notice-item + .notice-item {
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid var(--border);
 }
 
 .notice-item {
@@ -629,7 +717,7 @@ header.sticky .header-title {
 }
 
 .notice-item:hover {
-  background: #F8F9FF;
+  background: var(--white-bg);
 }
 
 .notice-img {
@@ -653,7 +741,7 @@ header.sticky .header-title {
 }
 
 .bg-yellow {
-  background: #FACC56;
+  background: var(--yellow);
 }
 
 .bg-green {
@@ -812,7 +900,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
   display: block;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -864,7 +952,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--light-gray);
+  color: var(--gray);
 }
 
 .course-tab {
@@ -890,7 +978,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -985,7 +1073,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--light-gray);
+  color: var(--gray);
 }
 
 .courseCard-caption h6 {
@@ -994,7 +1082,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: #1D1C28;
+  color: var(--black);
 }
 
 .courseCard-meta {
@@ -1050,7 +1138,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--black-bg);
+  color: var(--black);
   margin-right: 5px;
 }
 
@@ -1076,7 +1164,7 @@ header.sticky .header-title {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.16px;
-  color: var(--black-bg);
+  color: var(--black);
   display: block;
   margin-left: 4px;
   border-right: none;
@@ -1759,7 +1847,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 13px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   position: relative;
 }
 
@@ -2191,7 +2279,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .comment-rate-star {
@@ -2220,7 +2308,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .course-sticky {
@@ -2339,7 +2427,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 11px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .review-page .common-rate p {
@@ -2504,7 +2592,7 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   padding: 13px 0;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2515,7 +2603,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .payment-item-wrapper {
@@ -2539,7 +2627,7 @@ header.sticky .header-title {
 
 .promocode {
   padding-bottom: 16px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   text-align: center;
 }
 
@@ -2643,7 +2731,7 @@ header.sticky .header-title {
 .payment-price {
   margin-top: 17px;
   padding-bottom: 41px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .payment-price .payment-price-item + .payment-price-item {
@@ -2667,7 +2755,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .payment-price-item p {
@@ -2682,7 +2770,7 @@ header.sticky .header-title {
   line-height: 18px;
   text-align: right;
   letter-spacing: -0.08px;
-  color: var(--black-bg);
+  color: var(--black);
   display: block;
 }
 
@@ -2831,7 +2919,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--black-bg);
+  color: var(--black);
   text-align: center;
 }
 
@@ -2892,7 +2980,7 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   padding: 12px 0;
   position: relative;
 }
@@ -2926,7 +3014,7 @@ header.sticky .header-title {
   line-height: 20px;
   text-align: right;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 #payment_modal .icon-copy {
@@ -2983,7 +3071,7 @@ header.sticky .header-title {
 
 #payment_modal .enter-check {
   padding: 21px 8px 21px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3001,7 +3089,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: var(--black-bg);
+  color: var(--black);
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -3132,13 +3220,13 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: #000000;
+  color: var(--black);
   display: block;
   margin-top: 6px;
 }
 
 .testCard-title:hover {
-  color: #000000;
+  color: var(--black);
 }
 
 .testCard .courseCard-meta {
@@ -3295,7 +3383,7 @@ header.sticky .header-title {
 
 .authorize-input {
   margin-top: 16px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--border);
   border-radius: 4px;
 }
 
@@ -3316,6 +3404,7 @@ header.sticky .header-title {
   letter-spacing: -0.24px;
   color: var(--black);
   border: none;
+  background: transparent;
 }
 
 .authorize-input-form input:focus {
@@ -3618,7 +3707,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .taskCard-page .course-filter {
@@ -3847,7 +3936,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .tableItem {
@@ -3856,7 +3945,7 @@ header.sticky .header-title {
   display: flex;
   padding-top: 22px;
   padding-bottom: 12px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .teacherCard {
@@ -4063,7 +4152,7 @@ header.sticky .header-title {
 }
 
 .visitList {
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .visitList-wrapper .visitList + .visitList {
@@ -4116,7 +4205,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .rateTop-btn svg {
@@ -4141,7 +4230,7 @@ header.sticky .header-title {
 }
 
 .rateTop-test-list .test-list-item + .test-list-item {
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid var(--border);
 }
 
 .test-list-item {
@@ -4162,7 +4251,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: #000000;
+  color: var(--black);
   display: block;
   max-width: 85%;
   overflow: hidden;
@@ -4226,7 +4315,7 @@ header.sticky .header-title {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px 16px 14px 16px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .rate-content {
@@ -4558,7 +4647,7 @@ header.sticky .header-title {
 }
 
 .referralList-item {
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   padding: 8px 0;
 }
 
@@ -4647,7 +4736,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   position: relative;
 }
 
@@ -4890,7 +4979,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .courseBox-info-bottom p {
@@ -5044,7 +5133,7 @@ header.sticky .header-title {
 .myCourse-checkbox-wrapper {
   margin-top: 8px;
   padding: 14px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5209,7 +5298,7 @@ header.sticky .header-title {
           flex: 1;
   margin-left: 8px;
   padding: 15px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .audio-player-right span {
@@ -5238,7 +5327,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .lecture-text p + p {
@@ -5292,7 +5381,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
   margin-left: 12px;
 }
 
@@ -5693,7 +5782,7 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid var(--border);
 }
 
 .btn-white {
@@ -5794,8 +5883,8 @@ header.sticky .header-title {
 .taskResult-wrapper {
   margin-top: 16px;
   padding: 16px 0 48px 0;
-  border-top: 0.5px solid #E5E5E5;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
 }
 
 .taskResult-top h6 {
@@ -6134,7 +6223,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .resultMember-number {
@@ -6382,7 +6471,7 @@ header.sticky .header-title {
 
 .testProgram-top {
   padding-bottom: 13px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .testProgram-top-head {
@@ -6706,7 +6795,7 @@ header.sticky .header-title {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid var(--border);
   padding-top: 12px;
 }
 
@@ -6814,7 +6903,7 @@ header.sticky .header-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid var(--border);
 }
 
 .statement-left p {
@@ -6822,7 +6911,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .statement-left span {
@@ -6844,7 +6933,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: var(--black-bg);
+  color: var(--black);
 }
 
 .statement-right-img {
@@ -6932,14 +7021,14 @@ header.sticky .header-title {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.35px;
-  color: #000000;
+  color: var(--black);
 }
 
 .walletModal-body-caption span {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: #000000;
+  color: var(--black);
   display: block;
 }
 
@@ -7008,7 +7097,7 @@ header.sticky .header-title {
   line-height: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #000000;
+  color: var(--black);
 }
 
 .profile-content {
@@ -7105,7 +7194,7 @@ header.sticky .header-title {
 .form-label .input-form {
   margin-top: 8px;
   background: var(--white);
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 8px 17px 6px 8px;
 }
@@ -7119,6 +7208,7 @@ header.sticky .header-title {
   line-height: 20px;
   letter-spacing: -0.24px;
   color: var(--black);
+  background: transparent;
 }
 
 .input-form input:focus {
@@ -7342,7 +7432,7 @@ header.sticky .header-title {
 .statistics-left {
   width: 34%;
   padding-right: 16px;
-  border-right: 0.5px solid #E5E5E5;
+  border-right: 0.5px solid var(--border);
 }
 
 .statistics-right {
@@ -7712,16 +7802,12 @@ header.authorized .header-authorize {
           flex: 1;
 }
 
-.bootstrap-datetimepicker-widget .datepicker-days table tbody tr:hover {
-  background-color: #eee;
-}
-
 .reward {
   position: absolute;
   bottom: 12px;
   left: 12px;
   padding: 6px 12px;
-  background: #FACC56;
+  background: var(--yellow);
   -webkit-box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
           box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
   border-radius: 4px;
@@ -7852,7 +7938,7 @@ header.not-scroll {
 
 .audio-range:active::-moz-range-thumb {
   transform: scale(1.2);
-  background: #007db5;
+  background: var(--blue);
 }
 
 .audio-range::-ms-track {
@@ -7918,6 +8004,94 @@ header.not-scroll {
   top: 10px;
   width: 20px;
   height: 20px;
+}
+
+.switch-dark-text {
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: var(--black);
+  margin-left: 12px;
+}
+
+.switch-dark {
+  background: var(--pearl);
+  border-radius: 24px;
+  width: 44px;
+  height: 24px;
+  position: relative;
+}
+
+.switch-dark input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.switch-dark .slider {
+  width: 20.4px;
+  height: 20.4px;
+  border-radius: 50%;
+  background: var(--white);
+  -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 1.8px;
+  left: 1.8px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.switch-dark-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 6px;
+  width: 13px;
+  height: 13px;
+}
+
+.moon {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5.5px;
+  width: 12px;
+  height: 13px;
+}
+
+.switch-dark input:checked + .slider {
+  -webkit-transform: translateX(19.6px);
+      -ms-transform: translateX(19.6px);
+          transform: translateX(19.6px);
+}
+
+.switch-dark-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 23px;
 }
 
 @media (max-width: 1200px) and (min-width: 1024px) {
@@ -9878,6 +10052,17 @@ header.not-scroll {
   }
   .program-caption {
     max-width: 72%;
+  }
+  .sun {
+    width: 20px;
+    height: 20px;
+  }
+  .moon {
+    width: 17px;
+    height: 18px;
+  }
+  .switch-dark-wrapper {
+    display: none;
   }
 }
 

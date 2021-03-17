@@ -1,6 +1,8 @@
 @import "fonts";
 @import "specification";
 @import "vars";
+@import "dark-mode";
+
 
 body {
   font-family: "SF Pro Text";
@@ -98,7 +100,7 @@ body {
 }
 
 .main-aside-bottom {
-  margin-top: 70px;
+  margin-top: 24px;
 }
 
 .faq h6 {
@@ -125,7 +127,7 @@ body {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: $black-bg;
+  color: $black;
   display: block;
   margin-left: 10px;
 }
@@ -386,7 +388,7 @@ header.sticky .header-title {
 }
 
 .notice-list .notice-item + .notice-item {
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid $border;
 }
 
 .notice-item {
@@ -397,7 +399,7 @@ header.sticky .header-title {
 }
 
 .notice-item:hover {
-  background: #F8F9FF;
+  background: $white-bg;
 }
 
 .notice-img {
@@ -415,7 +417,7 @@ header.sticky .header-title {
 }
 
 .bg-yellow {
-  background: #FACC56;
+  background: $yellow;
 }
 
 .bg-green {
@@ -555,7 +557,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
   display: block;
   transition: 0.3s ease;
   white-space: nowrap;
@@ -595,7 +597,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $light-gray;
+  color: $gray;
 }
 
 .course-tab {
@@ -616,7 +618,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
   transition: 0.3s ease;
 }
 
@@ -692,7 +694,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $light-gray;
+  color: $gray;
 }
 
 .courseCard-caption h6 {
@@ -701,7 +703,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: #1D1C28;
+  color: $black;
 }
 
 .courseCard-meta {
@@ -747,7 +749,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $black-bg;
+  color: $black;
   margin-right: 5px;
 }
 
@@ -769,7 +771,7 @@ header.sticky .header-title {
   font-size: 10px;
   line-height: 12px;
   letter-spacing: 0.16px;
-  color: $black-bg;
+  color: $black;
   display: block;
   margin-left: 4px;
   border-right: none;
@@ -1294,7 +1296,7 @@ header.sticky .header-title {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 13px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
   position: relative;
 }
 
@@ -1635,7 +1637,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $black-bg;
+  color: $black;
 }
 
 .comment-rate-star {
@@ -1660,7 +1662,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .course-sticky {
@@ -1756,7 +1758,7 @@ header.sticky .header-title {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 11px;
-    border-bottom: 0.5px solid #E5E5E5;
+    border-bottom: 0.5px solid $border;
   }
 
   .common-rate p {
@@ -1884,7 +1886,7 @@ header.sticky .header-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
   padding: 13px 0;
   flex: 1;
 }
@@ -1893,7 +1895,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: $black-bg;
+  color: $black;
 }
 
 .payment-item-wrapper {
@@ -1917,7 +1919,7 @@ header.sticky .header-title {
 
 .promocode {
   padding-bottom: 16px;
-  border-bottom:  0.5px solid #E5E5E5;
+  border-bottom:  0.5px solid $border;
   text-align: center;
 }
 
@@ -1986,7 +1988,7 @@ header.sticky .header-title {
 .payment-price {
   margin-top: 17px;
   padding-bottom: 41px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .payment-price .payment-price-item + .payment-price-item {
@@ -2004,7 +2006,7 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: $black-bg;
+  color: $black;
 }
 
 .payment-price-item p {
@@ -2019,7 +2021,7 @@ header.sticky .header-title {
   line-height: 18px;
   text-align: right;
   letter-spacing: -0.08px;
-  color: $black-bg;
+  color: $black;
   display: block;
 }
 
@@ -2153,7 +2155,7 @@ header.sticky .header-title {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: -0.41px;
-    color: $black-bg;
+    color: $black;
     text-align: center;
   }
 
@@ -2201,7 +2203,7 @@ header.sticky .header-title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 0.5px solid #E5E5E5;
+    border-bottom: 0.5px solid $border;
     padding: 12px 0;
     position: relative;
   }
@@ -2227,7 +2229,7 @@ header.sticky .header-title {
     line-height: 20px;
     text-align: right;
     letter-spacing: -0.24px;
-    color: $black-bg;
+    color: $black;
   }
 
   .icon-copy {
@@ -2272,7 +2274,7 @@ header.sticky .header-title {
 
   .enter-check {
     padding: 21px 8px 21px 0;
-    border-bottom: 0.5px solid #E5E5E5;
+    border-bottom: 0.5px solid $border;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2284,7 +2286,7 @@ header.sticky .header-title {
     font-size: 17px;
     line-height: 22px;
     letter-spacing: -0.41px;
-    color: $black-bg;
+    color: $black;
     flex: 1;
   }
 
@@ -2397,13 +2399,13 @@ header.sticky .header-title {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: #000000;
+  color: $black;
   display: block;
   margin-top: 6px;
 }
 
 .testCard-title:hover {
-  color: #000000;
+  color: $black;
 }
 
 .testCard .courseCard-meta {
@@ -2541,7 +2543,7 @@ header.sticky .header-title {
 
 .authorize-input {
   margin-top: 16px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid $border;
   border-radius: 4px;
 }
 
@@ -2562,6 +2564,7 @@ header.sticky .header-title {
   letter-spacing: -0.24px;
   color: $black;
   border: none;
+  background: transparent;
 }
 
 .authorize-input-form input:focus {
@@ -2778,7 +2781,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .taskCard-page .course-filter {
@@ -2960,14 +2963,14 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $black-bg;
+  color: $black;
 }
 
 .tableItem {
   display: flex;
   padding-top: 22px;
   padding-bottom: 12px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .teacherCard {
@@ -3147,7 +3150,7 @@ header.sticky .header-title {
 }
 
 .visitList {
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .visitList-wrapper .visitList + .visitList {
@@ -3190,7 +3193,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: $black-bg;
+  color: $black;
 }
 
 .rateTop-btn svg {
@@ -3212,7 +3215,7 @@ header.sticky .header-title {
 }
 
 .rateTop-test-list .test-list-item + .test-list-item {
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid $border;
 }
 
 .test-list-item {
@@ -3227,7 +3230,7 @@ header.sticky .header-title {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.08px;
-  color: #000000;
+  color: $black;
   display: block;
   max-width: 85%;
   overflow: hidden;
@@ -3284,7 +3287,7 @@ header.sticky .header-title {
   display: flex;
   align-items: center;
   padding: 16px 16px 14px 16px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .rate-content {
@@ -3566,7 +3569,7 @@ header.sticky .header-title {
 }
 
 .referralList-item {
-  border-bottom:  0.5px solid #E5E5E5;
+  border-bottom:  0.5px solid $border;
   padding: 8px 0;
 }
 
@@ -3638,7 +3641,7 @@ header.sticky .header-title {
   display: flex;
   justify-content: space-between;
   padding-bottom: 16px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
   position: relative;
 }
 
@@ -3835,7 +3838,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .courseBox-info-bottom p {
@@ -3976,7 +3979,7 @@ header.sticky .header-title {
 .myCourse-checkbox-wrapper {
   margin-top: 8px;
   padding: 14px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4111,7 +4114,7 @@ header.sticky .header-title {
   flex: 1;
   margin-left: 8px;
   padding: 15px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .audio-player-right span {
@@ -4140,7 +4143,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .lecture-text p + p {
@@ -4175,7 +4178,7 @@ header.sticky .header-title {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
   margin-left: 12px;
 }
 
@@ -4519,7 +4522,7 @@ header.sticky .header-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid $border;
 }
 
 .btn-white {
@@ -4598,8 +4601,8 @@ header.sticky .header-title {
 .taskResult-wrapper {
   margin-top: 16px;
   padding: 16px 0 48px 0;
-  border-top: 0.5px solid #E5E5E5;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid $border;
+  border-bottom: 0.5px solid $border;
 }
 
 .taskResult-top h6 {
@@ -4855,7 +4858,7 @@ header.sticky .header-title {
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .resultMember-number {
@@ -5076,7 +5079,7 @@ header.sticky .header-title {
 
 .testProgram-top {
   padding-bottom: 13px;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .testProgram-top-head {
@@ -5351,7 +5354,7 @@ header.sticky .header-title {
 .test-result .test-content-bottom {
   display: none;
   justify-content: flex-end;
-  border-top: 0.5px solid #E5E5E5;
+  border-top: 0.5px solid $border;
   padding-top: 12px;
 }
 
@@ -5441,7 +5444,7 @@ header.sticky .header-title {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
-  border-bottom: 0.5px solid #E5E5E5;
+  border-bottom: 0.5px solid $border;
 }
 
 .statement-left p {
@@ -5449,7 +5452,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .statement-left span {
@@ -5469,7 +5472,7 @@ header.sticky .header-title {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: -0.24px;
-  color: $black-bg;
+  color: $black;
 }
 
 .statement-right-img {
@@ -5539,14 +5542,14 @@ header.sticky .header-title {
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.35px;
-  color: #000000;
+  color: $black;
 }
 
 .walletModal-body-caption span {
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.41px;
-  color: #000000;
+  color: $black;
   display: block;
 }
 
@@ -5608,7 +5611,7 @@ header.sticky .header-title {
   line-height: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
 }
 
 .profile-content {
@@ -5691,7 +5694,7 @@ header.sticky .header-title {
 .form-label .input-form {
   margin-top: 8px;
   background: $white;
-  border: 1px solid #E5E5E5;
+  border: 1px solid $border;
   border-radius: 4px;
   padding: 8px 17px 6px 8px;
 }
@@ -5705,6 +5708,7 @@ header.sticky .header-title {
   line-height: 20px;
   letter-spacing: -0.24px;
   color: $black;
+  background: transparent;
 }
 
 .input-form input:focus {
@@ -5876,7 +5880,7 @@ header.sticky .header-title {
 .statistics-left {
   width: 34%;
   padding-right: 16px;
-  border-right: 0.5px solid #E5E5E5;
+  border-right: 0.5px solid $border;
 }
 
 .statistics-right {
@@ -6183,16 +6187,12 @@ header.authorized .header-authorize {
   flex: 1;
 }
 
-.bootstrap-datetimepicker-widget .datepicker-days table tbody tr:hover {
-  background-color: #eee;
-}
-
 .reward {
   position: absolute;
   bottom: 12px;
   left: 12px;
   padding: 6px 12px;
-  background: #FACC56;
+  background: $yellow;
   box-shadow: 0px 0px 40px rgba(250, 204, 86, 0.4);
   border-radius: 4px;
 }
@@ -6309,7 +6309,7 @@ header.not-scroll {
 }
 .audio-range:active::-moz-range-thumb {
   transform: scale(1.2);
-  background: #007db5;
+  background: $blue;
 }
 .audio-range::-ms-track {
   width: 100%;
@@ -6366,6 +6366,86 @@ header.not-scroll {
   width: 20px;
   height: 20px;
 }
+
+.switch-dark-text {
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: $black;
+  margin-left: 12px;
+}
+
+.switch-dark {
+  background: $pearl;
+  border-radius: 24px;
+  width: 44px;
+  height: 24px;
+  position: relative;
+}
+
+.switch-dark input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.switch-dark .slider {
+  width: 20.4px;
+  height: 20.4px;
+  border-radius: 50%;
+  background: $white;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 1.8px;
+  left: 1.8px;
+  transition: 0.3s ease;
+}
+
+.switch-dark-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 6px;
+  width: 13px;
+  height: 13px;
+}
+
+.moon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5.5px;
+  width: 12px;
+  height: 13px;
+}
+
+.switch-dark input:checked + .slider {
+  transform: translateX(19.6px);
+}
+
+.switch-dark-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 23px;
+}
+
+
+
+
+
 
 @import "media";
 
