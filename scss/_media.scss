@@ -202,7 +202,7 @@
     padding: 0 80px;
   }
   .next-btn {
-    right: 32px;
+    right: 48px;
   }
   .prev-btn {
     left: 0;
@@ -1770,5 +1770,22 @@
   }
 
 }
+
+@media (min-width: 1500px) {
+  .header, .mainPage {
+    max-width: 80%;
+  }
+  .iframe {
+    height: 400px;
+  }
+}
+
+
+
+
+
+
+
+
 
 

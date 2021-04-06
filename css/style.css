@@ -3886,7 +3886,7 @@ header.sticky .header-title {
 }
 
 .journalCard {
-  width: 48%;
+  width: 395px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3928,6 +3928,9 @@ header.sticky .header-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .journalCard-caption .testCard-title {
@@ -5532,7 +5535,7 @@ header.sticky .header-title {
 
 .next-btn {
   top: 152px;
-  right: -138px;
+  right: -90px;
 }
 
 .prev-btn a:before {
@@ -7127,6 +7130,8 @@ header.sticky .header-title {
           box-shadow: 0px 4px 40px rgba(0, 1, 83, 0.07);
   border-radius: 12px;
   width: 100%;
+  max-width: 815px;
+  margin: 0 auto;
 }
 
 .profile-body {
@@ -8371,7 +8376,7 @@ header.not-scroll {
     padding: 0 80px;
   }
   .next-btn {
-    right: 32px;
+    right: 48px;
   }
   .prev-btn {
     left: 0;
@@ -10217,5 +10222,14 @@ header.not-scroll {
   }
   .main-logo-xs {
     margin-right: 5px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header, .mainPage {
+    max-width: 80%;
+  }
+  .iframe {
+    height: 400px;
   }
 }

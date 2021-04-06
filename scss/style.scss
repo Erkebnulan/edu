@@ -2888,7 +2888,7 @@ header.sticky .header-title {
 }
 
 .journalCard {
-  width: 48%;
+  width: 395px;
   display: flex;
   border-radius: 12px;
   padding: 16px;
@@ -2917,6 +2917,7 @@ header.sticky .header-title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 
 .journalCard-caption .testCard-title {
@@ -4270,7 +4271,7 @@ header.sticky .header-title {
 
 .next-btn {
   top: 152px;
-  right: -138px;
+  right: -90px;
 }
 
 .prev-btn a:before {
@@ -5597,6 +5598,8 @@ header.sticky .header-title {
   box-shadow: 0px 4px 40px rgba(0, 1, 83, 0.07);
   border-radius: 12px;
   width: 100%;
+  max-width: 815px;
+  margin: 0 auto;
 }
 
 .profile-body {
