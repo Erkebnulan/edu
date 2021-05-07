@@ -670,6 +670,8 @@ header.sticky .header-title {
   overflow: hidden;
   margin: 8px;
   filter: drop-shadow(0px 32px 40px rgba(0, 0, 0, 0.08));
+  display: flex;
+  flex-direction: column;
 }
 
 .courseCard-img {
@@ -687,6 +689,10 @@ header.sticky .header-title {
 .courseCard-caption {
   background: $white;
   padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .courseCard-title {
@@ -1541,7 +1547,6 @@ header.sticky .header-title {
 
 .courseComment {
   margin-top: 24px;
-  padding-bottom: 17px;
 }
 
 .courseComment-top {
@@ -1562,7 +1567,6 @@ header.sticky .header-title {
 .comment-wrapper {
   margin-top: 8px;
   display: flex;
-  padding-bottom: 9px;
 }
 
 .comment-wrapper .comment-item + .comment-item {
@@ -1737,6 +1741,8 @@ header.sticky .header-title {
     display: block;
     overflow: hidden;
     margin-top: 17px;
+    padding-bottom: 40px;
+    position: relative;
   }
 
   .comment-wrapper .comment-item + .comment-item {
@@ -2757,6 +2763,8 @@ header.sticky .header-title {
   margin: 8px;
   filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .taskCard-img {
@@ -2774,6 +2782,10 @@ header.sticky .header-title {
 .taskCard-caption {
   background: $white;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 .taskCard-author {
@@ -6442,6 +6454,36 @@ header.not-scroll {
   display: flex;
   align-items: center;
   margin-top: 23px;
+}
+
+.spinner-wrapper {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translateX(-50%);
+}
+
+.spinner-box {
+  position: fixed;
+  transform: translateY(110%);
+  transition: 0.1s cubic-bezier(1,.9,.01,.99)
+}
+
+.spinner-border {
+  display: block;
+  border-right-color: $light-gray;
+  border-top-color: $blue;
+  border-left-color: $blue;
+  border-bottom-color: $blue;
+  width: 24px;
+  height: 24px;
+}
+
+.spinner-box.active {
+  transform: translateY(0);
 }
 
 

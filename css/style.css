@@ -1092,6 +1092,13 @@ header.sticky .header-title {
   margin: 8px;
   -webkit-filter: drop-shadow(0px 32px 40px rgba(0, 0, 0, 0.08));
           filter: drop-shadow(0px 32px 40px rgba(0, 0, 0, 0.08));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .courseCard-img {
@@ -1110,6 +1117,19 @@ header.sticky .header-title {
 .courseCard-caption {
   background: var(--white);
   padding: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .courseCard-title {
@@ -2202,7 +2222,6 @@ header.sticky .header-title {
 
 .courseComment {
   margin-top: 24px;
-  padding-bottom: 17px;
 }
 
 .courseComment-top {
@@ -2231,7 +2250,6 @@ header.sticky .header-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 9px;
 }
 
 .comment-wrapper .comment-item + .comment-item {
@@ -2444,6 +2462,8 @@ header.sticky .header-title {
   display: block;
   overflow: hidden;
   margin-top: 17px;
+  padding-bottom: 40px;
+  position: relative;
 }
 
 .review-page .comment-wrapper .comment-item + .comment-item {
@@ -3726,6 +3746,13 @@ header.sticky .header-title {
   -webkit-filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
           filter: drop-shadow(0px 4px 100px rgba(0, 1, 83, 0.07));
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .taskCard-img {
@@ -3744,6 +3771,19 @@ header.sticky .header-title {
 .taskCard-caption {
   background: var(--white);
   padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .taskCard-author {
@@ -8140,6 +8180,44 @@ header.not-scroll {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 23px;
+}
+
+.spinner-wrapper {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.spinner-box {
+  position: fixed;
+  -webkit-transform: translateY(110%);
+      -ms-transform: translateY(110%);
+          transform: translateY(110%);
+  -webkit-transition: 0.1s cubic-bezier(1, 0.9, 0.01, 0.99);
+  -o-transition: 0.1s cubic-bezier(1, 0.9, 0.01, 0.99);
+  transition: 0.1s cubic-bezier(1, 0.9, 0.01, 0.99);
+}
+
+.spinner-border {
+  display: block;
+  border-right-color: var(--light-gray);
+  border-top-color: var(--blue);
+  border-left-color: var(--blue);
+  border-bottom-color: var(--blue);
+  width: 24px;
+  height: 24px;
+}
+
+.spinner-box.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 @media (max-width: 1200px) and (min-width: 1024px) {

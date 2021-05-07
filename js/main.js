@@ -112,3 +112,13 @@ $('.switch-dark input').change(function (){
         $('body').removeClass('dark-mode');
     }
 })
+
+//nprogress
+NProgress.start();
+$('body').show();
+$(window).on('load', function() {
+    setTimeout(function() {
+        NProgress.done(); $('.fade').removeClass('out');
+    }, 1000);
+});
+NProgress.configure({ showSpinner: false });
