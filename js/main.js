@@ -118,7 +118,8 @@ NProgress.start();
 $('body').show();
 $(window).on('load', function() {
     setTimeout(function() {
-        NProgress.done(); $('.fade').removeClass('out');
+        NProgress.done();
+        $('.fade').removeClass('out');
     }, 1000);
 });
 NProgress.configure({ showSpinner: false });

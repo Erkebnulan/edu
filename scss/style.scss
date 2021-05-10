@@ -12,6 +12,7 @@ body {
 .wrapper {
   display: flex;
   max-width: 100vw;
+  margin-top: 2px;
 }
 
 .main-aside {
@@ -845,7 +846,7 @@ header.sticky .header-title {
     display: flex;
     border-radius: 12px;
     padding: 16px;
-    align-items: center;
+    flex-direction: row;
   }
 
   .courseCard-img {
@@ -863,6 +864,7 @@ header.sticky .header-title {
     align-items: center;
     justify-content: space-between;
     height: 100%;
+    flex-direction: row;
   }
 
   .courseCard-caption-top {
@@ -2253,6 +2255,14 @@ header.sticky .header-title {
     margin-left: 10px;
   }
 
+  .btn-copy.success .icon-copy {
+    background: url("../img/icon/copy-success.svg");
+  }
+
+  .btn-copy.danger .icon-copy {
+    background: url("../img/icon/copy-danger.svg");
+  }
+
   .btn-pay {
     background: $pearl;
     border-radius: 10px;
@@ -3520,6 +3530,14 @@ header.sticky .header-title {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.referralBox-input .btn-copy.danger .icon-copy {
+  background: url(../img/icon/copy-danger.svg);
+}
+
+.referralBox-input .btn-copy.success .icon-copy {
+  background: url(../img/icon/copy-success.svg);
 }
 
 .icon-copy {
@@ -6485,8 +6503,6 @@ header.not-scroll {
 .spinner-box.active {
   transform: translateY(0);
 }
-
-
 
 
 
