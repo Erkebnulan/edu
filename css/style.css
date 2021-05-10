@@ -8242,6 +8242,45 @@ header.not-scroll {
           transform: translateY(0);
 }
 
+.btn-logout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border: 1px solid #F9F9FD;
+  border-radius: 6px 0 0 6px;
+  background: #fff;
+}
+
+.btn-logout.show {
+  -webkit-transform: translateX(-95%);
+      -ms-transform: translateX(-95%);
+          transform: translateX(-95%);
+}
+
+.header-profile-box {
+  position: relative;
+  margin-left: auto;
+}
+
+.header-profile {
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 1200px) and (min-width: 1024px) {
   .main-aside {
     padding: 30px 30px 30px 35px;
@@ -10036,6 +10075,9 @@ header.not-scroll {
     display: none;
   }
   .header.visible-back-link .header-tools {
+    display: none;
+  }
+  .header.visible-back-link .header-profile-box {
     display: none;
   }
   .lecture-arrows {

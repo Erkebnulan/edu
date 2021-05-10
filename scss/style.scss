@@ -6504,7 +6504,34 @@ header.not-scroll {
   transform: translateY(0);
 }
 
+.btn-logout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  border: 1px solid #F9F9FD;
+  border-radius: 6px 0 0 6px;
+  background: #fff;
+}
 
+.btn-logout.show {
+  transform: translateX(-95%);
+}
+
+.header-profile-box {
+  position: relative;
+  margin-left: auto;
+}
+
+.header-profile {
+  position: relative;
+  z-index: 1;
+}
 
 
 @import "media";
