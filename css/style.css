@@ -7837,11 +7837,11 @@ header.sticky .header-title {
   display: none;
 }
 
-.header-profile {
+.header-profile-box {
   display: none;
 }
 
-header.authorized .header-profile {
+header.authorized .header-profile-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
