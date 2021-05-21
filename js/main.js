@@ -114,12 +114,14 @@ $('.switch-dark input').change(function (){
 })
 
 //nprogress
-NProgress.start();
-$('body').show();
+
 $(window).on('load', function() {
+    NProgress.start();
     setTimeout(function() {
         NProgress.done();
         $('.fade').removeClass('out');
     }, 1000);
+
 });
 NProgress.configure({ showSpinner: false });
+

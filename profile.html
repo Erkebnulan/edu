@@ -226,17 +226,17 @@
                     <a class="registration-btn active" href="#">Регистрация</a>
                 </div>
                 <div class="header-profile-box">
+                    <button class="btn-plain btn-logout">
+                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9V11M3 1H15C16.105 1 17 1.895 17 3V17C17 18.105 16.105 19 15 19H3C1.895 19 1 18.105 1 17V3C1 1.895 1.895 1 3 1ZM1 3.003V16.998C1 18.485 2.565 19.452 3.894 18.787L7.894 16.787C8.572 16.447 9 15.755 9 14.997V5.003C9 4.245 8.572 3.553 7.894 3.214L3.894 1.214C2.565 0.549 1 1.516 1 3.003Z" stroke="#8D8F9B" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
                     <a class="header-profile" href="#">
                         <span>Мой профиль</span>
                         <div class="header-profile-img">
                             <img src="img/content/author.png">
                         </div>
                     </a>
-                    <button class="btn-plain btn-logout">
-                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9V11M3 1H15C16.105 1 17 1.895 17 3V17C17 18.105 16.105 19 15 19H3C1.895 19 1 18.105 1 17V3C1 1.895 1.895 1 3 1ZM1 3.003V16.998C1 18.485 2.565 19.452 3.894 18.787L7.894 16.787C8.572 16.447 9 15.755 9 14.997V5.003C9 4.245 8.572 3.553 7.894 3.214L3.894 1.214C2.565 0.549 1 1.516 1 3.003Z" stroke="#8D8F9B" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
                 </div>
                 <div class="header-tools">
                     <button class="btn-plain search-btn">
@@ -444,6 +444,12 @@
                             <button class="btn-plain btn-main">Сохранить</button>
                         </div>
                     </div>
+                    <button class="btn-plain profile-logout">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.82051C0 1.26337 1.26337 0 2.82051 0H10C10.4248 0 10.7692 0.344396 10.7692 0.769231C10.7692 1.19407 10.4248 1.53846 10 1.53846H2.82051C2.11304 1.53846 1.53846 2.11304 1.53846 2.82051V17.1795C1.53846 17.887 2.11304 18.4615 2.82051 18.4615H10C10.4248 18.4615 10.7692 18.8059 10.7692 19.2308C10.7692 19.6556 10.4248 20 10 20H2.82051C1.26337 20 0 18.7366 0 17.1795V2.82051ZM14.5843 5.35351C14.8847 5.0531 15.3717 5.0531 15.6721 5.35351L19.7747 9.45607C19.9155 9.59689 19.9903 9.77871 19.9991 9.9631C19.9997 9.97539 20 9.9877 20 10C20 10.1043 19.9792 10.2038 19.9416 10.2944C19.9041 10.3852 19.8484 10.4702 19.7747 10.5439L15.6721 14.6465C15.3717 14.9469 14.8847 14.9469 14.5843 14.6465C14.2839 14.3461 14.2839 13.859 14.5843 13.5586L17.3737 10.7692H6.92308C6.49824 10.7692 6.15385 10.4248 6.15385 10C6.15385 9.57517 6.49824 9.23077 6.92308 9.23077H17.3737L14.5843 6.44136C14.2839 6.14096 14.2839 5.65391 14.5843 5.35351Z" fill="#FF3B30"/>
+                        </svg>
+                        <span>Выйти из личного кабинета</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -467,16 +473,24 @@
     })
 
     //logout-btn
-    $('.header-profile-box').mouseenter(function (){
-        $('.btn-logout').addClass('show');
-    });
-    $('.header-profile-box').mouseleave(function (){
-        $('.btn-logout').removeClass('show');
-    })
+    $(document).ready(function() {
+        if($(window).width() > 576) {
+            $('.header-profile-box').mouseenter(function (){
+                $('.btn-logout').addClass('show');
+            });
+            $('.header-profile-box').mouseleave(function (){
+                $('.btn-logout').removeClass('show');
+            })
 
-    $('.btn-logout').mouseenter(function (){
-        $(this).addClass('show');
+            $('.btn-logout').mouseenter(function (){
+                $(this).addClass('show');
+            });
+        }
     });
+
+
+
+
 </script>
 </body>
 </html>

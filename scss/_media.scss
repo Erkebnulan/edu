@@ -1679,6 +1679,18 @@
   .switch-dark-wrapper {
     display: none;
   }
+  .btn-logout {
+    position: relative;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 2px solid #F9F9FD;
+  }
+  .btn-logout svg {
+    width: 14px;
+    height: 16px;
+  }
 }
 
 @media (max-width: 320px) {

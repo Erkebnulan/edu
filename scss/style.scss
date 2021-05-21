@@ -12,7 +12,6 @@ body {
 .wrapper {
   display: flex;
   max-width: 100vw;
-  margin-top: 2px;
 }
 
 .main-aside {
@@ -6532,6 +6531,49 @@ header.not-scroll {
   position: relative;
   z-index: 1;
 }
+
+.show-more-link {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.08px;
+  text-transform: uppercase;
+  color: $blue;
+  margin-top: 12px;
+}
+
+.show-more-link:hover, .show-more-link:focus {
+  color: $blue;
+}
+
+.for-progress {
+  width: 100%;
+  height: 2px;
+}
+
+.profile-logout {
+  display: flex;
+  align-items: center;
+  margin: 16px auto 0 auto;
+  padding: 14px 28px;
+  min-height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(0, 1, 83, 0.07);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 815px;
+}
+
+.profile-logout span {
+  font-family: "SF Pro Text";
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.24px;
+  color: $red;
+  display: inline-block;
+  margin-left: 16px;
+}
+
 
 
 @import "media";
