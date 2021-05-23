@@ -68,6 +68,9 @@
   .statistics .courseCard-caption h6 {
     line-height: 110%;
   }
+  .test-header-content {
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -221,6 +224,9 @@
   }
   .term-content {
     margin-top: 16px;
+  }
+  .test-header-content {
+    max-width: 700px;
   }
 }
 
@@ -1690,6 +1696,36 @@
   .btn-logout svg {
     width: 14px;
     height: 16px;
+  }
+  .form-half {
+    display: block;
+  }
+  .form-half .input-form {
+    width: 100%;
+  }
+  .select-content {
+    padding: 15px;
+  }
+  .form-half .input-form + .input-form {
+    margin-top: 10px;
+  }
+  .select-content-body .btn-light-gray {
+    width: 100%;
+  }
+  .test-header-content {
+    max-width: 100%;
+  }
+  .sticky-test-header {
+    padding: 0 15px;
+  }
+  .test-header-content .string-tab .string-tablink + .string-tablink {
+    margin-left: 15px;
+  }
+  .test-alert {
+    display: block;
+  }
+  .result-item-number {
+    min-width: 30px;
   }
 }
 
