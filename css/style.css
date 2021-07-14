@@ -8625,6 +8625,43 @@ header.not-scroll {
   margin-bottom: 6px;
 }
 
+.aside-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 0 0 0;
+  list-style-type: none;
+  padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aside-social li + li {
+  margin-left: 10px;
+}
+
+.aside-social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+
+.aside-social li a svg {
+  width: 25px;
+  height: 25px;
+}
+
 @media (max-width: 1200px) and (min-width: 1024px) {
   .main-aside {
     padding: 30px 30px 30px 35px;
