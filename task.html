@@ -243,6 +243,7 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6 9.64484V7.35139C17.6 4.3959 15.0928 2 12 2C8.90721 2 6.4 4.3959 6.4 7.35139V9.64484C6.4 12.1676 4 12.7792 4 14.2317C4 15.5314 7.12 16.5252 12 16.5252C16.88 16.5252 20 15.5314 20 14.2317C20 12.7792 17.6 12.1676 17.6 9.64484Z" stroke="#111621" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M12.5 18.3288C11.6147 18.3288 10.7828 18.3003 10 18.2451C10.3425 19.2892 11.3549 19.9998 12.5 19.9998C13.6451 19.9998 14.6575 19.2892 15 18.2451C14.2172 18.3003 13.3853 18.3288 12.5 18.3288Z" fill="#111621"/>
                             </svg>
+                            <div class="notice-number">2</div>
                         </button>
                         <div class="notice-list">
                             <div class="notice-item">
@@ -379,13 +380,18 @@
                                                 <img src="img/content/teacher.png">
                                             </div>
                                             <div class="teacherCard-caption">
-                                                <p>Батыркул Максат</p>
-                                                <span>Тут решение задачи</span>
-                                                <div class="task-file">
-                                                    <div class="task-file-img">
-                                                        <img src="img/content/file.svg">
+                                                <div class="teacherCard-caption-inner">
+                                                    <p>Батыркул Максат</p>
+                                                    <span>Тут решение задачи</span>
+                                                    <div class="task-file">
+                                                        <div class="task-file-img">
+                                                            <img src="img/content/file.svg">
+                                                        </div>
+                                                        <p>Домашнее задание.doc</p>
                                                     </div>
-                                                    <p>Домашнее задание.doc</p>
+                                                </div>
+                                                <div class="taskResult-time">
+                                                    <span>01.01.2021</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -396,8 +402,13 @@
                                                 <img src="img/content/teacher.png">
                                             </div>
                                             <div class="teacherCard-caption">
-                                                <p>Батыркул Максат</p>
-                                                <span>Здравствуй Максат, гуд джоб. Хорошо выполнили задание. Но слабовато</span>
+                                                <div class="teacherCard-caption-inner">
+                                                    <p>Батыркул Максат</p>
+                                                    <span>Здравствуй Максат, гуд джоб. Хорошо выполнили задание. Но слабовато</span>
+                                                </div>
+                                                <div class="taskResult-time">
+                                                    <span>01.01.2021</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -416,6 +427,10 @@
                         </div>
                         <div class="test-content-bottom">
                             <a class="btn-plain btn-white" href="#">Назад к лекциям</a>
+                            <div class="course-rating">
+                                <p>Оценка (%)</p>
+                                <input type="number">
+                            </div>
                             <!--при добавлении класса 'active' примняется другой стиль и нужно убрать атрибут 'disabled'-->
                             <button class="btn-plain btn-gray" disabled>Завершить задание</button>
                         </div>

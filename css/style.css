@@ -8662,6 +8662,75 @@ header.not-scroll {
   height: 25px;
 }
 
+.course-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+
+.course-rating p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: var(--gray);
+}
+
+.course-rating input {
+  width: 150px;
+  margin-left: 10px;
+}
+
+.test-content-bottom .btn-gray {
+  margin-left: 30px;
+}
+
+.teacherCard-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.taskResult-time {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: auto;
+}
+
+.header-tools {
+  min-height: 48px;
+}
+
+.notice-number {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--white);
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 100%;
+  position: absolute;
+  top: 7px;
+  right: 9px;
+}
+
 @media (max-width: 1200px) and (min-width: 1024px) {
   .main-aside {
     padding: 30px 30px 30px 35px;
